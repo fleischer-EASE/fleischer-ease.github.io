@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
+    <title>EASE Exoskeletons | About us</title>
+    
+    <!--carousel-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+    <!--animate on scroll-->
+    <!--readme via https://github.com/michalsnik/aos/tree/v2-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!--favicon-->
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div id="first-nav-row">
+            <a href="english.html"><img id="ease-logo" src="./img/ease-logo-white.svg" alt="ease logo"></a>
+            <div id="mobile-buttons">
+                <div id="language-toggle">
+                    <a href="about.html">de </a><span>|</span><a href="#" class="active-language" >en</a>
+                </div>
+                <a href="javascript:void(0);" id="menu-toggle" class="icon" onclick="menuToggle()"></a>
+            </div>
+        </div>
+        <div id="nav-elements">
+            <a class="nav-link" onclick="menuToggle()" href="english.html#exoskeletons-section">Exoskeletons</a>
+            <a class="nav-link" onclick="menuToggle()" href="about-english.html#timeline">Roadmap</a>
+            <a class="nav-link" onclick="menuToggle()" href="english.html#news">News</a>
+            <a class="nav-link" onclick="menuToggle()" href="about-english.html">About Us</a>
+            <a class="nav-link" onclick="menuToggle()" href="english.html#contact-section">Contact</a>
+        </div>
+        <div id="desktop-buttons">
+            <div id="language-toggle">
+                <a href="about.html">de </a><span>|</span><a href="#" class="active-language" >en</a>
+            </div>
+        </div>
+    </nav>
+    <img id="scroll-indicator" src="./img/scroll-indicator.svg" alt="" style="display: none;">
+    <section id="team-section" style="margin-top: 5rem;">
+        <h1>About us</h1>
+        <h2>Team</h2>
+        <h3>The C-Level</h3>
+
+        <div class="three-column-flex">
+            <div>
+                <img class="portrait-img" src="./img/martin.webp" alt="a portrait of martin">
+            </div>
+            <div class="left-align-column span-2" data-aos="fade-right">
+                <h6>The Coordinator</h6>
+                <h4>Martin Fleischer | CEO</h4>
+                <p>Chief Executive Officer</p>
+                <p>
+                    Business Development, Investor Relations and Strategy  <br>
+                </p>
+            </div>
+        </div>
+        
+        <div class="three-column-flex reverse-columns">
+            <div>
+                <img class="portrait-img" src="./img/christina.webp" alt="a portrait of christina">
+            </div>
+            <div class="right-align-column span-2" data-aos="fade-left">
+                <h6>The Enthusiast</h6>
+                <h4>Christina Harbauer | CCO</h4>
+                <p>Chief Commercial Officer</p>
+                <p>
+                    Customer Relations and External Operations </br>
+                    Expert in production ergonomics & exoskeletons
+                </p>
+            </div>
+        </div>
+        
+       
+        <div class="three-column-flex">
+            <div>
+                <img class="portrait-img" src="./img/noah.webp" alt="a portrait of noah">
+            </div>
+            <div class="left-align-column span-2" data-aos="fade-right">
+                <h6>The Doer</h6>
+                <h4>Noah Lars Gerullis | CTO, COO</h4>
+                <p>Chief Technology Officer & Chief Operations Officer</p>
+                <p>
+                    Tech and Supply Chain Managment </br>                    
+                </p>
+            </div>
+        </div>
+        
+
+
+        <div class="three-column-flex reverse-columns">
+            <div>
+                <img class="portrait-img" src="./img/Johannes.webp" alt="a portrait of Johannes">
+            </div>
+            <div class="right-align-column span-2" data-aos="fade-left">
+                <h6>The Numbers Guy</h6>
+                <h4>Johannes Blei | CFO</h4>
+                <p>Chief Financial Officer</p>
+                <p>
+                    Fundraising, Planning and Controlling<br>                 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div id="timeline">
+        <h3 style="margin-bottom: 5rem;">Roadmap</h3>
+        <div class="milestones">
+          
+            <!--
+            <div class="milestone" data-aos="zoom-out-down">
+                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
+                <div class="content">
+                    <h3>12 | 2019</h3>
+                    <h4>An award-winning idea</h4>
+                    <p>Winner of the Bioinspired Ideas Award for the concept of a soft, human-oriented exoskeleton.</p>
+                </div>
+            </div>
+            -->
+            
+            <div class="milestone" data-aos="zoom-out-down" >
+                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
+                <div class="content">
+                    <h3>07 | 2023</h3>
+                    <h4>The first demonstrator</h4>
+                    <p>Presentation of the first functional demonstrator at the summer party of the Chair of Ergonomics at TUM. </p>
+                </div>
+            </div>
+
+            <div class="milestone" data-aos="zoom-out-down" >
+                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
+                <div class="content">
+                    <h3>02 | 2024</h3>
+                    <h4>First big funding</h4>
+                    <p>Start of the EXIST research transfer funding phase.<br>A grant of up to 1M €.</p>
+                </div>
+            </div>
+
+            <div class="milestone" data-aos="zoom-out-down" >
+                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
+                <div class="content">
+                    <h3>12 | 2024</h3>
+                    <h4>Going mobile</h4>
+                    <p>First tech demos in the field with the now fully mobile demonstrator.</p> <!-- Mehr Meilensteine hier! -->
+                </div>
+            </div>
+
+            <div class="milestone" data-aos="zoom-out-down" >
+                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
+                <div class="content">
+                    <h3>03 | 2025</h3>
+                    <h4>Big Stage</h4>
+                    <p>Own EASE booth at the LogiMAT 2025 trade fair in Stuttgart.<br>
+                        Over 200 people tested the Exo.<br>
+                        Over 100 qualified leads.
+                </div>
+            </div>
+
+            <div class="milestone" data-aos="zoom-out-down" >
+                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
+                <div class="content">
+                    <h3>04 | 2025</h3>
+                    <h4>Incorporation</h4>
+                    <p>Incorporation of the EASE - Ergonomische Assistenzsysteme GmbH.</p> <!-- Mehr Meilensteine hier! -->
+                </div>
+            </div>
+
+            <div class="milestone" data-aos="zoom-out-down" >
+                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
+                <div class="content">
+                    <h3>05 | 2025</h3>
+                    <h4>Completed Field Tests</h4>
+                    <p>The EASE Exos were successfully deployed at relevant workplaces for several weeks. <br>The biggest highlight was this: <a href="#news">Click: News</a>! </p> <!-- Mehr Meilensteine hier! -->
+                </div>
+            </div>
+
+            <div class="milestone" data-aos="zoom-out-down" >
+                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
+                <div class="content">
+                    <h3>09 | 2025</h3>
+                    <h4>Future of Logistics</h4>
+                    <p>Winner of the Digital Logistics Award 2025.</p> <!-- Mehr Meilensteine hier! -->
+                </div>
+            </div>
+
+            <div class="milestone" data-aos="zoom-out-down" >
+                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
+                <div class="content">
+                    <h3>10 | 2025</h3>
+                    <h4>Revenue with Impact</h4>
+                    <p>First paid pilot project with our partner Langmatz GmbH.</p> <!-- Mehr Meilensteine hier! -->
+                </div>
+            </div>
+
+            <div class="milestone" data-aos="zoom-out-down" >
+                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
+                <div class="content">
+                    <h3>03 | 2026</h3>
+                    <h4>Winner of the LCS Logistics ChangerS Award</h4>
+                </div>
+            </div>
+
+            <div class="milestone" data-aos="zoom-out-down" >
+                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
+                <div class="content">
+                    <h3>Today</h3>
+                    <h4>Buy our exoskeletons!</h4>
+                    <p>LU 20 will be shipped in 2026. </br> Buy now and join our satisfied customers! </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <footer>
+        <div>
+            <img id="footer-pattern" src="./img/pattern-green.svg" alt="a pattern of triangles">
+        </div>
+        <div>
+            <a href="/"><img id="ease-icon" src="./img/favicon_big.svg" alt="ease logo"></a>
+        </div>        
+        <div>
+            <div id="footer-links">
+                <a href="english.html#exoskeletons-section">Exoskeletons</a>
+                <a href="about-english.html">About Us</a>
+                <a href="english.html#contact-section">Contact Us</a>
+            </div>
+            <div id="copyright">
+                <span>&#169; 2026 EASE <br> <a href="imprint.html">Imprint</a> | <a href="privacy.html">Data Privacy</a></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
