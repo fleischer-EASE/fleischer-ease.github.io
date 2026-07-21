@@ -5,33 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
         <title>Ease Exoskelette | Impressum</title>
         
-        <!--carousel-->
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
-        
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
         
-        <!--animate on scroll-->
-        <!--readme via https://github.com/michalsnik/aos/tree/v2-->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        
         <!--favicon-->
-        <link rel="icon" href="img/favicon.svg">
+        <link rel="icon" href="./favicon.ico">
     </head>
 <body>
     <nav id="navbar" class="scrolled">
         <div id="first-nav-row">
             <a href="index.html"><img id="ease-logo" src="./img/ease-logo-white.svg" alt="ease logo"></a>
-            <a href="javascript:void(0);" id="menu-toggle" class="icon" onclick="menuToggle()"></a>
+            <button type="button" id="menu-toggle" class="icon" aria-label="Navigation umschalten" aria-controls="nav-elements" aria-expanded="false" onclick="menuToggle()"></button>
         </div>
         <div id="nav-elements">
             <a class="nav-link" onclick="menuToggle()" href="index.html#exoskeletons-section">Exoskelette</a>
             <a class="nav-link" onclick="menuToggle()" href="index.html#about-section">Über uns</a>
             <a class="nav-link" onclick="menuToggle()" href="index.html#contact-section">Kontakt</a>
         </div>
-        <div id="language-toggle">
+        <div class="language-toggle">
             <a href="#" class="active-language">de </a><span>|</span><a href="#">en</a>
         </div>
     </nav>
@@ -63,34 +54,6 @@
             Umsatzsteuer-Identifikationsnummer: DE454811304
         </p>
 
-        <!-- change from here on - First as private persion just Name, Mail, Phone number -->
-        <!-- <p>Muster GmbH<br />
-        Musterstra&szlig;e 111<br />
-        Geb&auml;ude 44<br />
-        90210 Musterstadt</p>
-
-        <p>Handelsregister: HRB 999999<br />
-        Registergericht: Amtsgericht Musterstadt</p>
-
-        <p><strong>Vertreten durch:</strong><br />
-        Dr. Harry Mustermann<br />
-        Luise Beispiel</p>
-
-        <p><strong>Vorsitzender des Aufsichtsrats:</strong><br />
-        Richard Amtmann</p>
-
-        <h2>Kontakt</h2>
-        <p>Telefon: +49 (0) 123 44 55 66<br />
-        Telefax: +49 (0) 123 44 55 99<br />
-        E-Mail: mustermann@musterfirma.de</p>
-
-        <h2>Umsatzsteuer-ID</h2>
-        <p>Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a Umsatzsteuergesetz:<br />
-        DE999999999</p>
-
-        <h2>Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
-        <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
-        teilzunehmen.</p> -->
     </section>
     
     <footer>

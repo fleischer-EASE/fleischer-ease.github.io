@@ -186,13 +186,13 @@ nav {
     margin: 0 .75rem;
 }
 
-#language-toggle {
+.language-toggle {
     justify-content: end;
     display: flex;
     margin-left: auto;
 }
 
-#language-toggle > * {
+.language-toggle > * {
     margin-left: .5rem;
     opacity: .5;
 }
@@ -208,10 +208,14 @@ nav {
 }
 
 #menu-toggle {
-    background-repeat:no-repeat;
+    background-color: transparent;
+    background-repeat: no-repeat;
     background-position: center center;
-    background-image:url("./img/bars_dark.svg");       
+    background-image: url("./img/bars_dark.svg");
+    border: 0;
+    cursor: pointer;
     height: 1rem;
+    padding: 0;
     width: 1rem;
 }
 
@@ -444,39 +448,6 @@ nav {
     }
 }
 
-/* form */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form > input {
-    background-color: rgba(0, 66, 37, .1);
-    border: none;
-    border-radius: .5rem;
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-
-form > textarea {
-    background-color: rgba(0, 66, 37, .1);
-    border: none;
-    border-radius: .5rem;
-    padding: 1rem;
-    margin-bottom: 2rem;
-    resize: none;
-    height: 15rem;
-}
-
-form > button {
-    background-color: var(--main);
-    color: var(--ivory);
-    text-transform: uppercase;
-    border: none;
-    border-radius: 3rem;
-    padding: 1rem;
-}
-
 .button {
     display: block;
     text-align: center !important;
@@ -594,9 +565,8 @@ footer > div:last-child {
     #mobile-buttons {
         display: flex;
         align-items: center;
-        /*gap: 5rem; /* adjust spacing between language and menu */
     }
-    #language-toggle{
+    .language-toggle {
         display:flex;
         align-items: center;
         padding-right: 1rem;

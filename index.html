@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
     <title>EASE Exoskelette - Gemacht für Logistik</title>
     
-    <!--carousel-->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
-    
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     
@@ -25,10 +21,10 @@
         <div id="first-nav-row">
             <a href="index.html"><img id="ease-logo" src="./img/ease-logo-green.svg" alt="ease logo"></a>
             <div id="mobile-buttons">
-                <div id="language-toggle">
+                <div class="language-toggle">
                     <a href="#" class="active-language">de </a><span>|</span><a href="english.html">en</a>
                 </div>
-                <a href="javascript:void(0);" id="menu-toggle" class="icon" onclick="menuToggle()"></a>
+                <button type="button" id="menu-toggle" class="icon" aria-label="Navigation umschalten" aria-controls="nav-elements" aria-expanded="false" onclick="menuToggle()"></button>
             </div>
         </div>
         <div id="nav-elements">
@@ -39,7 +35,7 @@
             <a class="nav-link" onclick="menuToggle()" href="index.html#contact-section">Kontakt</a>
         </div>
         <div id="desktop-buttons">
-            <div id="language-toggle">
+            <div class="language-toggle">
                         <a href="#" class="active-language">de </a><span>|</span><a href="english.html">en</a>
             </div>
         </div>
@@ -48,7 +44,6 @@
     <div id="hero-section">
         <div id="hero-headlines">
             <h1>EASE Exoskelette</h1>
-           <!-- <h3>We Support Workers.</h3> -->
         </div>
         <a id="book-now-btn" class="big-central-btn" href="#contact-section">Demo buchen</a>        
         <img id="scroll-indicator" src="./img/scroll-indicator.svg" alt="downward triangle indicating user to scroll">
@@ -71,7 +66,7 @@
                 <p>Wir bei EASE verstehen die Herausforderungen körperlich fordernder Berufe. Mit unserer Technologie bieten wir echte Entlastung und schaffen gesunde Arbeitsbedingungen. Auf Augenhöhe mit denen, die wir unterstützen.</p>
             </div>
             <div>
-                <img src="./img/exoskeleton.webp" alt="an image of a worker wearing an exoskeleton" data-aos="zoom-in" data-aos-delay="400"> <!-- Noah Bild hier ändern -->
+                <img src="./img/exoskeleton.webp" alt="an image of a worker wearing an exoskeleton" data-aos="zoom-in" data-aos-delay="400">
             </div>
         </div>
     </section>
@@ -118,11 +113,6 @@
                 <h4>Industrie 5.0</h4>
                 <p>Wir bauen die Brücke zwischen Mensch und Industrie 5.0</p>
             </div>
-            <!-- <div class="icon-div" data-aos="fade-up" data-aos-delay="500">
-                <img src="./img/microchip-solid.svg" alt="an icon of a microchip">
-                <h4>AI Powered</h4>
-                <p>Dank hochentwickelter Sensoren und Algorithmen passt sich unser System in Echtzeit an die Bewegungen der Benutzer an</p>
-            </div> -->
             <div class="icon-div" data-aos="fade-up" data-aos-delay="750">
                 <img src="./img/user-solid.svg" alt="an icon of a person">
                 <h4>Intuitiv</h4>
@@ -135,16 +125,6 @@
         <h3 style="margin-bottom: 5rem;">Roadmap</h3>
         <div class="milestones">
           
-            <!--
-            <div class="milestone" data-aos="zoom-out-down">
-                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
-                <div class="content">
-                    <h3>12 | 2019</h3>
-                    <h4>Eine preisgekrönte Idee</h4>
-                    <p>Gewinn des Bioinspired Ideas Award für das Konzept eines weichen, menschenorientierten Exoskeletts.</p>
-                </div>
-            </div>
-            -->
             <div class="milestone" data-aos="zoom-out-down" >
                 <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
                 <div class="content">
@@ -168,7 +148,7 @@
                 <div class="content">
                     <h3>12 | 2024</h3>
                     <h4>Mobil Unterwegs</h4>
-                    <p>Erste Tech-Demos im Feld mit dem jetzt vollständig mobilen Demonstrator.</p> <!-- Mehr Meilensteine hier! -->
+                    <p>Erste Tech-Demos im Feld mit dem jetzt vollständig mobilen Demonstrator.</p>
                 </div>
             </div>
 
@@ -179,7 +159,7 @@
                     <h4>Große Bühne</h4>
                     <p>Eigener EASE Stand auf der LogiMAT 2025 Messe in Stuttgart.<br>
                         Über 200 Menschen haben das Exo getestet.<br>
-                        Über 100 qualifizierte Leads.</p> <!-- Mehr Meilensteine hier! -->
+                        Über 100 qualifizierte Leads.</p>
                 </div>
             </div>
 
@@ -188,7 +168,7 @@
                 <div class="content">
                     <h3>04 | 2025</h3>
                     <h4>Gründung</h4>
-                    <p>Gründung der EASE - Ergonomische Assistenzsysteme GmbH.</p> <!-- Mehr Meilensteine hier! -->
+                    <p>Gründung der EASE - Ergonomische Assistenzsysteme GmbH.</p>
                 </div>
             </div>
 
@@ -197,7 +177,7 @@
                 <div class="content">
                     <h3>05 | 2025</h3>
                     <h4>Abgeschlossene Feldtests</h4>
-                    <p>Die EASE Exoskelette wurden mehrere Wochen an relevanten Arbeitsplätzen im Feld erfolgreich eingesetzt.<br>Das Highlight war das hier: <a href="#news">Klicken: News</a>! </p> <!-- Mehr Meilensteine hier! -->
+                    <p>Die EASE Exoskelette wurden mehrere Wochen an relevanten Arbeitsplätzen im Feld erfolgreich eingesetzt.<br>Das Highlight war das hier: <a href="#news">Klicken: News</a>! </p>
                 </div>
             </div>
 
@@ -215,7 +195,7 @@
                 <div class="content">
                     <h3>10 | 2025</h3>
                     <h4>Umsatz mit Impact</h4>
-                    <p>Erstes bezahltes Pilot Projekt mit unserem Partner Langmatz GmbH.</p> <!-- Mehr Meilensteine hier! -->
+                    <p>Erstes bezahltes Pilot Projekt mit unserem Partner Langmatz GmbH.</p>
                 </div>
             </div>
 
@@ -325,7 +305,7 @@
         <br><br><br>
         <h3 style="margin-bottom: 5rem;">Unsere Partner</h3>
         <div class="horizontal-scrolling-div">
-            <div class="horizontal-scrolling-items"> <!-- must have the same div twice to work -->
+            <div class="horizontal-scrolling-items">
                 <img src="./img/exist_logo.svg" alt="exist logo">
                 <img src="./img/ptj-logo.svg" alt="ptj logo">
                 <img src="./img/bmwi_logo.svg" alt="bmwi logo">
@@ -345,7 +325,7 @@
                 <img src="./img/images.png" alt="Logo">
                 <img src="./img/GT.svg" alt="GT">    
             </div>
-            <div class="horizontal-scrolling-items"> <!-- must have the same div three times to work -->
+            <div class="horizontal-scrolling-items">
                 <img src="./img/exist_logo.svg" alt="exist logo">
                 <img src="./img/ptj-logo.svg" alt="ptj logo">
                 <img src="./img/bmwi_logo.svg" alt="bmwi logo">
@@ -401,22 +381,6 @@
             </div>
         </div>
     </section>
-    <!-- <form action="https://submit-form.com/hXQ2UPsh2">
-                    <input type="hidden" name="_redirect" value="https://ease-systems.de/index.html#contact-section"/>  Add fancy confetti thank you page here 
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Name" required="" />
-                    <label for="email">Mail</label>                    
-                    <input type="email" id="email" name="email" placeholder="Mail" required="" />
-                    <label for="message">Nachricht</label>
-                    <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Nachricht"
-                    required=""
-                    ></textarea>
-                    <button type="submit">Senden</button>
-                </form>              -->
-    
     <footer>
         <div>
             <img id="footer-pattern" src="./img/pattern-green.svg" alt="a pattern of triangles">
