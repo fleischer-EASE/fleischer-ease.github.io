@@ -1,11 +1,11 @@
 # EASE Website Backlog
 
-This file records the eight highest-impact website improvements identified in the July 2026 review. Reference an item by ID when asking for it to be implemented, for example: **"Implement EASE-03."**
+This file records the nine highest-impact website improvements identified in the July 2026 review. Reference an item by ID when asking for it to be implemented, for example: **"Implement EASE-03."**
 
 ## EASE-01 — Product-led LU 20 hero
 
 **Priority:** P0  
-**Status:** Ready
+**Status:** Done
 
 Replace the generic logistics hero with a clear LU 20 value proposition, real field-use imagery, and a deliberate CTA hierarchy.
 
@@ -87,7 +87,7 @@ Rough notes, brochures, datasheets, presentations, and unpolished source materia
 ## EASE-03 — Move customer proof near the top
 
 **Priority:** P0  
-**Status:** Ready
+**Status:** Done
 
 Surface field tests, paid pilots, awards, customer logos, quotations, and measurable outcomes directly after the hero.
 
@@ -101,7 +101,7 @@ Surface field tests, paid pilots, awards, customer logos, quotations, and measur
 ## EASE-04 — Shorten and reorder the homepage
 
 **Priority:** P1  
-**Status:** Ready
+**Status:** Done
 
 Restructure the homepage around the customer buying journey and reduce sections that delay product understanding.
 
@@ -126,9 +126,11 @@ Restructure the homepage around the customer buying journey and reduce sections 
 ## EASE-05 — Build a real demo-booking funnel
 
 **Priority:** P1  
-**Status:** Ready
+**Status:** Implemented with email handoff; direct submission endpoint pending
 
 Replace the mail-only demo journey with a short qualification and booking flow.
+
+The bilingual qualification form, validation, privacy notice, success/error states, next-step explanation, privacy-safe conversion events, and structured email fallback are implemented. Direct in-page submission still requires a dedicated HubSpot demo-form ID or equivalent endpoint to be added to the forms' `data-endpoint` attributes. The existing HubSpot form is the multi-step workplace self-test and does not collect the required demo-booking fields, so it is intentionally not reused.
 
 **Done when:**
 
@@ -140,9 +142,11 @@ Replace the mail-only demo journey with a short qualification and booking flow.
 ## EASE-06 — Align forms and privacy disclosures
 
 **Priority:** P0  
-**Status:** Needs legal/content review
+**Status:** Done
 
 Review the HubSpot self-test and all third-party resources against the privacy policy and consent approach.
+
+The HubSpot self-test loads only after an explicit, informed click; a non-HubSpot email alternative is provided. The privacy policy covers the controller, purposes, data categories, legal bases, recipients, international transfers, the approved twelve-month retention period, withdrawal and data-subject rights. It also documents that EASE uses no cookies or visitor tracking and retains only data actively submitted through form fields or optional uploads. The external AOS dependency was removed. Martin Fleischer approved the wording, retention period, recipients, HubSpot processing arrangement and consent mechanism on July 24, 2026.
 
 **Done when:**
 
@@ -154,9 +158,13 @@ Review the HubSpot self-test and all third-party resources against the privacy p
 ## EASE-07 — Improve performance and motion accessibility
 
 **Priority:** P1  
-**Status:** Ready
+**Status:** Done
 
 Reduce the homepage payload and ensure animations respect user preferences.
+
+Responsive WebP sources, lazy loading, intrinsic image dimensions, an optimized MP4/WebM product video, a lightweight poster and `preload="none"` are implemented. The new referenced product images total roughly 54 KB at 1800 px and 23 KB at 900 px; the case-study variants are roughly 176 KB and 65 KB. The video fell from roughly 10.4 MB to about 0.54 MB (MP4) / 0.49 MB (WebM). Reduced-motion behavior disables smooth scrolling and bouncing and reduces transition durations; the partner carousel is slowed from 30 to 40 seconds but remains automatic following a later explicit design request.
+
+Formal browser checks were completed on July 24, 2026. The cold-cache desktop profile recorded FCP/LCP of 0.24 seconds, a 0.42-second load event, zero layout shift and approximately 1.12 MB transferred. The throttled mobile profile used a 375 CSS-pixel viewport, 4× CPU slowdown, 150 ms latency, 1.6 Mbps download and 0.75 Mbps upload; it recorded FCP/LCP of 1.31 seconds, DOMContentLoaded at 1.32 seconds, the load event at 6.51 seconds, CLS of 0.006 and approximately 1.06 MB transferred. The desktop profile selected the 1800 px hero source and mobile selected the 900 px source. Neither profile downloaded the MP4/WebM during initial load. German and English pages had no failed requests, console warnings/errors or horizontal overflow.
 
 **Done when:**
 
@@ -168,7 +176,7 @@ Reduce the homepage payload and ensure animations respect user preferences.
 ## EASE-08 — Accessibility, SEO, and copy-quality pass
 
 **Priority:** P1  
-**Status:** Ready
+**Status:** Done
 
 Complete a focused quality pass covering semantics, keyboard use, search metadata, internationalization, and language consistency.
 
@@ -180,3 +188,17 @@ Complete a focused quality pass covering semantics, keyboard use, search metadat
 - Metadata includes descriptions, canonical URLs, `hreflang`, social previews, and relevant structured data.
 - German tone is consistent and known spelling/HTML errors are fixed in both languages.
 - Language switches lead to equivalent translated content where available.
+
+## EASE-09 — Put the whole team on the website
+
+**Priority:** P1
+
+**Status:** Done
+
+Add every current team member to the team section on the website.
+
+**Done when:**
+
+- Every current team member is included with their name, role, and approved photo.
+- The complete team is shown on both the German and English pages.
+- The team section works well on desktop and mobile.

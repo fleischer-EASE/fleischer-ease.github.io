@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
-        <title>Ease Exoskelette | Impressum</title>
+        <title>Impressum | EASE Exoskelette</title>
+        <meta name="description" content="Impressum und Anbieterkennzeichnung der EASE – Ergonomische Assistenzsysteme GmbH.">
+        <link rel="canonical" href="https://ease-systems.de/imprint.html">
         
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
@@ -12,22 +14,34 @@
         <link rel="icon" href="./favicon.ico">
     </head>
 <body>
-    <nav id="navbar" class="scrolled">
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt</a>
+    <nav id="navbar" class="scrolled" aria-label="Hauptnavigation">
         <div id="first-nav-row">
-            <a href="index.html"><img id="ease-logo" src="./img/ease-logo-white.svg" alt="ease logo"></a>
-            <button type="button" id="menu-toggle" class="icon" aria-label="Navigation umschalten" aria-controls="nav-elements" aria-expanded="false" onclick="menuToggle()"></button>
+            <a href="index.html" aria-label="EASE Startseite"><img id="ease-logo" src="./img/ease-logo-white.svg" alt="EASE"></a>
+            <div id="mobile-buttons">
+                <div class="language-toggle">
+                    <span class="active-language" aria-current="page">DE</span><span aria-hidden="true">|</span><a href="english.html" lang="en" hreflang="en" aria-label="English homepage">EN</a>
+                </div>
+                <button type="button" id="menu-toggle" class="icon" aria-label="Navigation umschalten" aria-controls="nav-elements" aria-expanded="false" onclick="menuToggle()"></button>
+            </div>
         </div>
         <div id="nav-elements">
-            <a class="nav-link" onclick="menuToggle()" href="index.html#exoskeletons-section">Exoskelette</a>
-            <a class="nav-link" onclick="menuToggle()" href="index.html#about-section">Über uns</a>
+            <a class="nav-link" onclick="menuToggle()" href="index.html#proof-section">Nachweise</a>
+            <a class="nav-link" onclick="menuToggle()" href="index.html#lu20-section">LU 20</a>
+            <a class="nav-link" onclick="menuToggle()" href="index.html#field-test">Praxistest</a>
             <a class="nav-link" onclick="menuToggle()" href="index.html#contact-section">Kontakt</a>
+            <a class="nav-link" onclick="menuToggle()" href="index.html#faq-section">FAQ</a>
+            <a class="nav-link" onclick="menuToggle()" href="index.html#about-section">Team</a>
         </div>
-        <div class="language-toggle">
-            <a href="#" class="active-language">de </a><span>|</span><a href="#">en</a>
+        <div id="desktop-buttons">
+            <div class="language-toggle">
+                <span class="active-language" aria-current="page">DE</span><span aria-hidden="true">|</span><a href="english.html" lang="en" hreflang="en" aria-label="English homepage">EN</a>
+            </div>
         </div>
     </nav>
     
-    <section class="only-section">
+    <main id="main-content">
+    <section class="only-section legal-page">
 
         <h1>Impressum</h1>
 
@@ -45,7 +59,7 @@
         </p>
 
         <p>
-            Hompage Inhaber und Firma: EASE - Ergonomische Assistenzsysteme GmbH <br>
+            Homepage-Inhaber und Firma: EASE – Ergonomische Assistenzsysteme GmbH <br>
             Rechtsform: Gesellschaft mit beschränkter Haftung (GmbH) <br>
             Sitz der Gesellschaft: München<br>
             Geschäftsführung: Martin Fleischer, Christina Harbauer, Noah Gerullis<br>
@@ -55,19 +69,22 @@
         </p>
 
     </section>
+    </main>
     
     <footer>
         <div>
-            <img id="footer-pattern" src="./img/pattern-green.svg" alt="a pattern of triangles">
+            <img id="footer-pattern" src="./img/pattern-green.svg" loading="lazy" decoding="async" alt="">
         </div>
         <div>
-            <a href="/"><img id="ease-icon" src="./img/favicon_big.svg" alt="ease logo"></a>
+            <a href="/" aria-label="EASE Startseite"><img id="ease-icon" src="./img/favicon_big.svg" loading="lazy" decoding="async" alt="EASE"></a>
         </div>        
         <div>
             <div id="footer-links">
-                <a href="https://ease-systems.de#exoskeletons-section">Exoskelette</a>
-                <a href="https://ease-systems.de#about-section">Über uns</a>
-                <a href="https://ease-systems.de#contact-section">Kontakt</a>
+                <a href="index.html#lu20-section">LU 20</a>
+                <a href="index.html#field-test">Praxistest</a>
+                <a href="index.html#contact-section">Kontakt</a>
+                <a href="index.html#faq-section">FAQ</a>
+                <a href="index.html#about-section">Team</a>
             </div>
             <div id="copyright">
                 <span>&#169; 2026 EASE <br> <a href="imprint.html">Impressum</a> | <a href="privacy.html">Datenschutz</a></span>

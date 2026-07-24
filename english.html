@@ -3,234 +3,538 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
-    <title>EASE Exoskeletons - Tailored to Logistics</title>
+    <title>LU 20 - Active Exoskeleton for Logistics | EASE</title>
+    <meta name="description" content="LU 20 actively supports the back and arms during physically demanding logistics tasks. Assess your workplace, request a demo and plan for delivery in 2026.">
+    <link rel="canonical" href="https://ease-systems.de/english.html">
+    <link rel="alternate" hreflang="de" href="https://ease-systems.de/">
+    <link rel="alternate" hreflang="en" href="https://ease-systems.de/english.html">
+    <link rel="alternate" hreflang="x-default" href="https://ease-systems.de/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:title" content="LU 20 – Active Exoskeleton for Logistics">
+    <meta property="og:description" content="Active support for the back and arms during physically demanding logistics tasks.">
+    <meta property="og:url" content="https://ease-systems.de/english.html">
+    <meta property="og:image" content="https://ease-systems.de/img/og-lu20-logistics.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="LU 20 during an industrial field test">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LU 20 – Active Exoskeleton for Logistics">
+    <meta name="twitter:description" content="Active support for the back and arms during physically demanding logistics tasks.">
+    <meta name="twitter:image" content="https://ease-systems.de/img/og-lu20-logistics.jpg">
+    <meta name="twitter:image:alt" content="LU 20 during an industrial field test">
     
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     
-    <!--animate on scroll-->
-    <!--readme via https://github.com/michalsnik/aos/tree/v2-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
     <!--favicon-->
     <link rel="icon" href="./favicon.ico">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://ease-systems.de/#organization",
+          "name": "EASE – Ergonomische Assistenzsysteme GmbH",
+          "url": "https://ease-systems.de/",
+          "logo": "https://ease-systems.de/img/ease-logo-green.svg",
+          "email": "info@ease-systems.de",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Waldtruderinger Straße 16",
+            "postalCode": "81827",
+            "addressLocality": "Munich",
+            "addressCountry": "DE"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://ease-systems.de/#lu20",
+          "name": "LU 20",
+          "description": "Active exoskeleton supporting the back and arms during physically demanding logistics tasks.",
+          "url": "https://ease-systems.de/english.html#lu20-section",
+          "image": "https://ease-systems.de/img/Rendering_hinten-1800.webp",
+          "brand": {
+            "@id": "https://ease-systems.de/#organization"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
-    <nav id="navbar">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav id="navbar" class="scrolled" aria-label="Main navigation">
         <div id="first-nav-row">
-            <a href="english.html"><img id="ease-logo" src="./img/ease-logo-green.svg" alt="ease logo"></a>
+            <a href="english.html" aria-label="EASE home"><img id="ease-logo" src="./img/ease-logo-green.svg" alt="EASE"></a>
             <div id="mobile-buttons">
                 <div class="language-toggle">
-                    <a href="index.html">de </a><span>|</span><a href="#" class="active-language" >en</a>
+                    <a href="index.html" lang="de" hreflang="de">DE</a><span aria-hidden="true">|</span><span class="active-language" aria-current="page">EN</span>
                 </div>
                 <button type="button" id="menu-toggle" class="icon" aria-label="Toggle navigation" aria-controls="nav-elements" aria-expanded="false" onclick="menuToggle()"></button>
             </div>
         </div>
         <div id="nav-elements">
-            <a class="nav-link" onclick="menuToggle()" href="english.html#exoskeletons-section">Exoskeletons</a>
-            <a class="nav-link" onclick="menuToggle()" href="english.html#timeline">Roadmap</a>
-            <a class="nav-link" onclick="menuToggle()" href="english.html#news">News</a>
-            <a class="nav-link" onclick="menuToggle()" href="english.html#about-section">About Us</a>
+            <a class="nav-link" onclick="menuToggle()" href="english.html#proof-section">Proof</a>
+            <a class="nav-link" onclick="menuToggle()" href="english.html#lu20-section">LU 20</a>
+            <a class="nav-link" onclick="menuToggle()" href="english.html#field-test">Field Test</a>
             <a class="nav-link" onclick="menuToggle()" href="english.html#contact-section">Contact</a>
+            <a class="nav-link" onclick="menuToggle()" href="english.html#faq-section">FAQ</a>
+            <a class="nav-link" onclick="menuToggle()" href="english.html#about-section">Team</a>
         </div>
         <div id="desktop-buttons">
             <div class="language-toggle">
-                <a href="index.html">de </a><span>|</span><a href="#" class="active-language" >en</a>
+                <a href="index.html" lang="de" hreflang="de">DE</a><span aria-hidden="true">|</span><span class="active-language" aria-current="page">EN</span>
             </div>
         </div>
     </nav>
     
+    <main id="main-content">
     <div id="hero-section">
+        <img class="hero-product-image" src="./img/Rendering_hinten-1800.webp" srcset="./img/Rendering_hinten-900.webp 900w, ./img/Rendering_hinten-1800.webp 1800w" sizes="(max-width: 860px) 100vw, 50vw" width="1800" height="1391" fetchpriority="high" decoding="async" alt="Rear view of the LU 20 exoskeleton">
         <div id="hero-headlines">
-            <h1>EASE Exoskeletons</h1>
+            <p class="hero-eyebrow">LU 20 · Active exoskeleton for logistics</p>
+            <h1>Active relief for back and arms.</h1>
+            <p class="hero-intro">LU 20 actively supports physically demanding logistics tasks while preserving the freedom of movement that matters at work.</p>
+            <div id="hero-actions">
+                <a id="book-now-btn" class="big-central-btn" href="#contact-section">Book a Demo</a>
+                <a class="hero-secondary-btn" href="#lu20-section">Explore the Benefits</a>
+            </div>
         </div>
-        <a id="book-now-btn" class="big-central-btn" href="#contact-section">Book Demo</a>        
-        <img id="scroll-indicator" src="./img/scroll-indicator.svg" alt="downward triangle indicating user to scroll">
+        <img id="scroll-indicator" src="./img/scroll-indicator.svg" alt="">
     </div>
 
-    <section>
-        <div style="text-align: center;">
-              <img src="./img/Rendering_hinten.png" alt="LU 20" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
-              <h2>Buy now: LU 20<br></h2>
-              <h4>the only active exoskeleton that supports arms <em>and</em> back.</h4>
+    <section id="proof-section" aria-labelledby="proof-heading">
+        <div class="proof-inner">
+            <div class="proof-bar" aria-label="Evidence from field use and market traction">
+                <div class="proof-stat">
+                    <strong>200+</strong>
+                    <span>satisfied testers</span>
+                </div>
+                <div class="proof-stat">
+                    <strong>Award-winning</strong>
+                    <span>Digital Logistics Award &amp; Logistics ChangerS</span>
+                </div>
+                <a class="proof-stat proof-cta" href="#contact-section">
+                    <strong>Request availability</strong>
+                    <span>Plan your LU 20 · Delivery in 2026</span>
+                </a>
+            </div>
+
+            <article class="proof-teaser">
+                <img src="./img/Rohde_Schwarz_Logo.png" loading="lazy" decoding="async" alt="Rohde &amp; Schwarz">
+                <div>
+                    <p class="section-kicker">Industrial field test · May 2025</p>
+                    <h2 id="proof-heading">Proven during live operations.</h2>
+                    <p>The deployment at the Teisnach plant generated direct feedback from logistics and production teams and concrete input for further development.</p>
+                </div>
+                <a class="text-link" href="#field-test">View the field test <span aria-hidden="true">↓</span></a>
+            </article>
         </div>
     </section>
 
+    <section id="lu20-section" class="content-section">
+        <div class="section-intro">
+            <p class="section-kicker">LU 20 benefits</p>
+            <h2>Active support. Freedom to move at work.</h2>
+            <p>LU 20 is designed for physically demanding logistics tasks. The system supports the back and arms; comparable production workflows can also be assessed.</p>
+        </div>
+        <div class="benefit-grid">
+            <article class="benefit-card">
+                <img src="./img/ease-icon.svg" alt="">
+                <h3>Back &amp; arms</h3>
+                <p>Active support for two heavily used areas of the body in one system.</p>
+            </article>
+            <article class="benefit-card">
+                <img src="./img/feather-solid.svg" alt="">
+                <h3>Freedom of movement</h3>
+                <p>Developed for dynamic logistics workflows where people need to stay mobile.</p>
+            </article>
+            <article class="benefit-card">
+                <img src="./img/user-solid.svg" alt="">
+                <h3>Built for practice</h3>
+                <p>Tested with employees at real logistics and industrial workplaces.</p>
+            </article>
+        </div>
+        <figure class="product-video">
+            <video muted loop playsinline preload="none" controls poster="./img/Produktvideo-poster.webp" aria-label="Product view of the LU 20 exoskeleton">
+                <source src="img/Produktvideo-optimized.webm" type="video/webm">
+                <source src="img/Produktvideo-optimized.mp4" type="video/mp4">
+                Your browser does not support this video.
+            </video>
+            <figcaption>Short product view of the LU 20 with active back and arm support.</figcaption>
+        </figure>
 
-    
-    <section>
-        <div class="three-column-flex">
-            <div class="left-align-column span-2" data-aos="fade-up">
-                <h6>Creating healthier and more sustainable workplaces</h6>
-                <h2>For the people who work hard.</h2>
-                <p>At EASE, we understand the challenges of physically demanding jobs. With our technology, we provide real relief and create healthy working conditions. On a par with those we support.</p>
+        <div id="product-details" class="product-details-section">
+        <div class="section-intro">
+            <h2>LU 20 at a glance.</h2>
+        </div>
+        <img class="product-detail-image" src="./img/Rendering_hinten-900.webp" srcset="./img/Rendering_hinten-900.webp 900w, ./img/Rendering_hinten-1800.webp 1800w" sizes="(max-width: 860px) 80vw, 460px" width="900" height="695" loading="lazy" decoding="async" alt="Rear view of the LU 20 exoskeleton">
+        <dl class="product-facts-grid">
+            <div>
+                <dt>Support</dt>
+                <dd>Up to 20 kg of active load relief</dd>
             </div>
             <div>
-                <img src="./img/exoskeleton.webp" alt="an image of a worker wearing an exoskeleton" data-aos="zoom-in" data-aos-delay="400">
+                <dt>Battery</dt>
+                <dd>Hot-swappable for continuous shifts</dd>
+            </div>
+            <div>
+                <dt>Donning</dt>
+                <dd>On in under 1 minute</dd>
+            </div>
+            <div>
+                <dt>Operation</dt>
+                <dd>Ready for 24/7 use</dd>
+            </div>
+        </dl>
+        <div class="product-note">
+            <p>We assess whether LU 20 fits your logistics task, workplace and team during a demo and workplace evaluation.</p>
+            <div class="product-note-actions">
+                <a class="big-central-btn product-selftest-btn" href="selbsttest.html">Start self-test (German)</a>
+                <a class="text-link" href="#contact-section">Request a demo <span aria-hidden="true">→</span></a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="field-test" class="wide-section" aria-labelledby="field-test-heading">
+        <article class="case-study">
+            <div class="case-study-copy">
+                <div class="customer-lockup">
+                    <img src="./img/Rohde_Schwarz_Logo.png" loading="lazy" decoding="async" alt="Rohde &amp; Schwarz">
+                    <span>Field test · May 2025</span>
+                </div>
+                <p class="section-kicker">Proven in practice</p>
+                <h2 id="field-test-heading">Tested during live operations.</h2>
+                <p>At the Teisnach plant, the EASE exoskeleton was tested under real-world conditions together with logistics and production employees. Their direct feedback provided concrete input for further development and confirmed the proof of concept.</p>
+                <dl class="case-facts">
+                    <div>
+                        <dt>Use case</dt>
+                        <dd>Logistics &amp; production</dd>
+                    </div>
+                    <div>
+                        <dt>Environment</dt>
+                        <dd>Live operations</dd>
+                    </div>
+                </dl>
+                <a class="text-link" href="files/Statement_RohdeSchwarz_en.pdf" target="_blank" rel="noopener">Read the full statement (PDF) <span aria-hidden="true">↗</span></a>
+            </div>
+            <img class="case-study-image" src="./img/RohdeSchwarz_Exoskeleton_FieldTest-1600.webp" srcset="./img/RohdeSchwarz_Exoskeleton_FieldTest-900.webp 900w, ./img/RohdeSchwarz_Exoskeleton_FieldTest-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw" width="1600" height="1067" loading="lazy" decoding="async" alt="An employee tests the EASE exoskeleton at Rohde &amp; Schwarz while an observer takes notes.">
+        </article>
+    </section>
+
+    <section id="contact-section" class="conversion-section">
+        <div class="conversion-layout demo-funnel">
+            <div class="demo-funnel-aside">
+                <p class="section-kicker">Request a demo</p>
+                <h2>Test LU 20 in your logistics operation.</h2>
+                <p>A few details help us prepare the demo for your workplace and team.</p>
+                <ol class="demo-steps">
+                    <li>
+                        <span>1</span>
+                        <div><strong>Assessment</strong><p>We review the task, movement pattern and operating conditions.</p></div>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <div><strong>Workplace test</strong><p>Your team experiences LU 20 in the relevant logistics process.</p></div>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <div><strong>Tailored offer</strong><p>You receive a recommendation for a pilot and the next step.</p></div>
+                    </li>
+                </ol>
+                <a class="inline-link demo-selftest-link" href="selbsttest.html">Not sure yet? Take the 3-minute self-test (German)</a>
+            </div>
+            <div class="demo-form-panel">
+                <form id="demo-form-en" class="demo-form" action="mailto:info@ease-systems.de" method="post" enctype="text/plain" novalidate
+                    data-locale="en"
+                    data-endpoint=""
+                    data-message-submitting="Sending your request …"
+                    data-message-success="Thank you. We have received your demo request."
+                    data-message-error="Your request could not be sent. Please try again or email info@ease-systems.de."
+                    data-message-email="Your email application has opened. Please send the prepared message to complete your request.">
+                    <div class="demo-form-grid">
+                        <div class="form-field">
+                            <label for="demo-company-en">Company *</label>
+                            <input id="demo-company-en" name="company" type="text" autocomplete="organization" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="demo-employees-en">Employees at the site *</label>
+                            <select id="demo-employees-en" name="employee_count" required>
+                                <option value="">Please select</option>
+                                <option value="1-25">1–25</option>
+                                <option value="26-100">26–100</option>
+                                <option value="101-500">101–500</option>
+                                <option value="501+">More than 500</option>
+                            </select>
+                        </div>
+                        <div class="form-field form-field-wide">
+                            <label for="demo-workplace-en">Logistics workplace or task *</label>
+                            <textarea id="demo-workplace-en" name="workplace_task" rows="4" placeholder="For example picking, lifting and carrying, or material supply" required></textarea>
+                        </div>
+                        <div class="form-field">
+                            <label for="demo-firstname-en">First name *</label>
+                            <input id="demo-firstname-en" name="first_name" type="text" autocomplete="given-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="demo-lastname-en">Last name *</label>
+                            <input id="demo-lastname-en" name="last_name" type="text" autocomplete="family-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="demo-email-en">Business email *</label>
+                            <input id="demo-email-en" name="email" type="email" autocomplete="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="demo-phone-en">Phone number</label>
+                            <input id="demo-phone-en" name="phone" type="tel" autocomplete="tel">
+                        </div>
+                        <div class="form-field form-field-wide">
+                            <label for="demo-timing-en">Preferred timing *</label>
+                            <select id="demo-timing-en" name="preferred_timing" required>
+                                <option value="">Please select</option>
+                                <option value="asap">As soon as possible</option>
+                                <option value="4-weeks">Within the next 4 weeks</option>
+                                <option value="3-months">Within the next 3 months</option>
+                                <option value="later">Later this year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-honeypot" aria-hidden="true">
+                        <label for="demo-website-en">Website</label>
+                        <input id="demo-website-en" name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+                    <label class="form-consent" for="demo-privacy-en">
+                        <input id="demo-privacy-en" name="privacy_notice" type="checkbox" required>
+                        <span>I have read how my demo request is processed in the <a href="privacy.html#demo-anfragen">privacy notice (German)</a>. *</span>
+                    </label>
+                    <button class="demo-submit big-central-btn" type="submit">Request a demo</button>
+                    <p class="demo-form-status" role="status" aria-live="polite"></p>
+                </form>
+                <div class="demo-success" hidden>
+                    <p class="section-kicker">Request received</p>
+                    <h3>Thank you for your interest in LU 20.</h3>
+                    <p>We will contact you to coordinate the task assessment, workplace test and the right next step.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="video-section" data-aos="fade-up">
-        <h2 style=margin-bottom:2rem;>Wearable Innovation.</h2>
-        <video autoplay muted loop playsinline>
-            <source src="img/Produktvideo.mp4" type="video/mp4" alt="a video of a worker wearing the exoskeleton">
-            Product Video of Exoskeleton.
-        </video>
-    </section>
-    
-    <section id="exoskeletons-section">
-        <h2>What makes exoskeletons so exciting?</h2>
-        <div class="three-column-flex">
-            <div class="icon-div" data-aos="fade-up">
-                <img src="./img/bed-solid.svg" alt="an icon of a person inside a bed">
-                <h4>Less sick days</h4>
-                <p>By providing targeted relief to strained muscle groups, illness-related absences and injuries are reduced - this saves costs and increases productivity</p>
-            </div>
-            <div class="icon-div" data-aos="fade-up" data-aos-delay="250">
-                <img src="./img/arrow-up-right-dots-solid.svg" alt="an icon of an arrow pointing to the top right">
-                <h4>Higher productivity</h4>
-                <p>Exoskeletons maintain stamina and motivation throughout the day and enable fatigue-free work during the entire shift - for consistent performance and better KPIs</p>
-            </div>
-            <div class="icon-div" data-aos="fade-up" data-aos-delay="500">
-                <img src="./img/ease-icon.svg" alt="an icon of a person lifting a package">
-                <h4>Future technology</h4>
-                <p>Exoskeletons are part of the modern working world because they support human abilities without replacing employees - for less fluctuation and an innovative image</p>
-            </div>
-        </div>
-    </section>
-    
-    <section>
-        <h2>The EASE difference</h2>
-        <div class="three-column-flex">
-            <div class="icon-div" data-aos="fade-up">
-                <img src="./img/feather-solid.svg" alt="an icon of a feather">
-                <h4>Lightweight & Flexible</h4>
-                <p>Our exoskeletons offer more freedom of movement and are lighter</p>
-            </div>
-            <div class="icon-div" data-aos="fade-up" data-aos-delay="250">
-                <img src="./img/circle-nodes-solid.svg" alt="an icon for connectiviy">
-                <h4>Industry 5.0</h4>
-                <p>We bridge the gap between people and industry 5.0</p>
-            </div>
-            <div class="icon-div" data-aos="fade-up" data-aos-delay="750">
-                <img src="./img/user-solid.svg" alt="an icon of a person">
-                <h4>Intuitive</h4>
-                <p>Our designs are not only functional, but intuitive. This ensures not only acceptance, but enthusiasm</p>
-            </div>
-        </div>
-    </section>
-    
-    <div id="timeline">
-        <h3 style="margin-bottom: 5rem;">Roadmap</h3>
-        <div class="milestones">
-          
-            <div class="milestone" data-aos="zoom-out-down" >
-                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
-                <div class="content">
-                    <h3>07 | 2023</h3>
-                    <h4>The first demonstrator</h4>
-                    <p>Presentation of the first functional demonstrator at the summer party of the Chair of Ergonomics at TUM. </p>
+    <section id="faq-section" class="content-section faq-section" aria-labelledby="faq-heading">
+        <div class="faq-layout">
+            <div class="faq-overview">
+                <p class="section-kicker">Frequently asked questions</p>
+                <h2 id="faq-heading">Answers for planning, rollout and operation.</h2>
+                <p class="faq-lead">From assistance performance and operating limits to batteries, maintenance and service: find the essential information about LU 20 at a glance.</p>
+                <div class="faq-category-nav" role="navigation" aria-label="FAQ topics">
+                    <a href="#faq-product"><span>01</span>Product &amp; performance</a>
+                    <a href="#faq-use"><span>02</span>Use &amp; safety</a>
+                    <a href="#faq-operation"><span>03</span>Battery, care &amp; maintenance</a>
+                    <a href="#faq-support"><span>04</span>Service &amp; trials</a>
                 </div>
+                <p class="faq-contact-note">Can’t find your question? <a class="inline-link" href="#contact-section">Talk to our team.</a></p>
             </div>
 
-            <div class="milestone" data-aos="zoom-out-down" >
-                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
-                <div class="content">
-                    <h3>02 | 2024</h3>
-                    <h4>First big funding</h4>
-                    <p>Start of the EXIST research transfer funding phase.<br>A grant of up to 1M €.</p>
+            <div class="faq-groups">
+                <div id="faq-product" class="faq-group">
+                    <div class="faq-group-heading">
+                        <span aria-hidden="true">01</span>
+                        <div>
+                            <p>5 questions</p>
+                            <h3>Product &amp; performance</h3>
+                        </div>
+                    </div>
+                    <div class="faq-list">
+                        <details>
+                            <summary>What does 20 kg of load compensation mean?</summary>
+                            <div class="faq-answer">
+                                <p>LU 20 provides total load relief of up to 20 kg, or up to 10 kg per arm. This means that assistance force reduces the load acting on the arms, shoulders and back. The actual weight of the object does not change.</p>
+                                <p>Heavier objects can also be handled with assistance. However, the user must be permitted and able to handle the load safely without an exoskeleton. Company rules, risk assessments and statutory load limits continue to apply.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>What does “active assistance” mean?</summary>
+                            <div class="faq-answer">
+                                <p>Active assistance means that the system uses a battery, sensors and motors. Via a cable system, the motors generate additional force that supports the body specifically when lifting, carrying and setting down loads. The strength and speed of assistance can be adjusted in stages using the control panel.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Does LU 20 preserve freedom of movement?</summary>
+                            <div class="faq-answer">
+                                <p>The system is designed for dynamic and varied tasks. In free mode, it follows the user’s movements so employees can move between assisted lifting tasks and carry out secondary activities. Safe use requires sufficient room to move and suitable workplace conditions.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How quickly can LU 20 be put on?</summary>
+                            <div class="faq-answer">
+                                <p>After instruction and individual adjustment, the system can typically be put on in less than one minute. Before every use, the fit must be checked and adjusted to the individual user.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How much does the system weigh?</summary>
+                            <div class="faq-answer">
+                                <p>LU 20 weighs approximately six kilograms. The load is distributed across the forearms, shoulders, back and hips by the body-contact structures. Thanks to the backpack system developed together with Deuter, the weight is barely noticeable.</p>
+                            </div>
+                        </details>
+                    </div>
                 </div>
-            </div>
 
-            <div class="milestone" data-aos="zoom-out-down" >
-                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
-                <div class="content">
-                    <h3>12 | 2024</h3>
-                    <h4>Going mobile</h4>
-                    <p>First tech demos in the field with the now fully mobile demonstrator.</p>
+                <div id="faq-use" class="faq-group">
+                    <div class="faq-group-heading">
+                        <span aria-hidden="true">02</span>
+                        <div>
+                            <p>5 questions</p>
+                            <h3>Use &amp; safety</h3>
+                        </div>
+                    </div>
+                    <div class="faq-list">
+                        <details>
+                            <summary>Which tasks is LU 20 suitable for?</summary>
+                            <div class="faq-answer">
+                                <p>LU 20 is intended in particular for repeated, dynamic lifting, carrying, setting down and positioning of loads between floor and shoulder height. Typical applications include:</p>
+                                <ul>
+                                    <li>production and logistics</li>
+                                    <li>order picking and parcel handling</li>
+                                    <li>material transport</li>
+                                    <li>loading and unloading</li>
+                                    <li>machine loading</li>
+                                    <li>assembly of heavy components</li>
+                                    <li>repositioning and sorting tasks</li>
+                                </ul>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Where may the system be used?</summary>
+                            <div class="faq-answer">
+                                <p>LU 20 is designed for dry indoor spaces in commercial and industrial work environments. Its intended temperature range is −10 °C to +40 °C.</p>
+                                <p>The system has no special protection against water or dust. Outdoor use, use in potentially explosive atmospheres or use in other particularly hazardous areas is not intended without a separate assessment and approval.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Who may use the exoskeleton?</summary>
+                            <div class="faq-answer">
+                                <p>The system is intended for trained, adult professional users who are medically fit. Before first use, instruction and approval for the relevant workplace are required. Use at work is always voluntary.</p>
+                                <p>Pregnant people and people with pacemakers, metal implants or comparable medical risks may use the system only after appropriate medical clearance. If there is any doubt about a user’s health, medical advice should be sought before use.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>What instruction is provided?</summary>
+                            <div class="faq-answer">
+                                <p>Before first use, users receive practical instruction. This covers correct donning and adjustment, operation, operating limits, important safety information and use at the intended workplace. The system may be used only after this instruction.</p>
+                                <p>Supervisors, multipliers and those responsible for occupational safety and organisation can also be included. This does not replace the company risk assessment or any training the employer is legally required to provide.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Does the exoskeleton replace workplace safety measures?</summary>
+                            <div class="faq-answer">
+                                <p>No. LU 20 supports the body, but it does not replace a risk assessment, ergonomic workplace design, operating instructions or legally required training. It may be used only at workplaces where the task is permitted and can be carried out safely without an exoskeleton.</p>
+                            </div>
+                        </details>
+                    </div>
                 </div>
-            </div>
 
-            <div class="milestone" data-aos="zoom-out-down" >
-                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
-                <div class="content">
-                    <h3>03 | 2025</h3>
-                    <h4>Big Stage</h4>
-                    <p>Own EASE booth at the LogiMAT 2025 trade fair in Stuttgart.<br>
-                        Over 200 people tested the Exo.<br>
-                        Over 100 qualified leads.
+                <div id="faq-operation" class="faq-group">
+                    <div class="faq-group-heading">
+                        <span aria-hidden="true">03</span>
+                        <div>
+                            <p>5 questions</p>
+                            <h3>Battery, care &amp; maintenance</h3>
+                        </div>
+                    </div>
+                    <div class="faq-list">
+                        <details>
+                            <summary>How long does the battery last?</summary>
+                            <div class="faq-answer">
+                                <p>Depending on use, the assistance level and the battery fitted, runtime is typically up to eight hours. Particularly demanding tasks or tasks with continuous motor assistance may reduce this. The replaceable battery allows the system to be prepared for the next shift in just a few steps. With scheduled battery changes, operation across all three shifts is possible.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How long does charging take?</summary>
+                            <div class="faq-answer">
+                                <p>Charging time depends on the capacity of the battery and the charger used. Because a discharged battery can be swapped directly for a charged one, ongoing operation does not need to stop while a battery is charging.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Are the battery and charger included?</summary>
+                            <div class="faq-answer">
+                                <p>Unless otherwise agreed, the battery and charger must generally be purchased separately. LU 20 uses approved batteries from the Makita XGT 40V max range and a compatible charger.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Is the product washable?</summary>
+                            <div class="faq-answer">
+                                <p>The body-contact textile components are replaceable and machine washable. Each regular user should have their own textile set. When the user changes, the textiles are replaced and cleaned in line with the care instructions. This supports hygienic use in multi-shift operations.</p>
+                                <p>The mechanical and electronic components must not be cleaned in a washing machine. Follow the cleaning instructions in the user manual for these components.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How often does LU 20 require maintenance?</summary>
+                            <div class="faq-answer">
+                                <p>The regular maintenance interval depends on how intensively the exoskeleton is used. LU 20 will notify you when maintenance is required. This includes checks of the mechanical and electronic components, safety-relevant functions, connections and wear parts. Required maintenance and approved safety-relevant updates are completed and documented in a maintenance report.</p>
+                                <p>The unit may be opened, repaired or technically modified only by EASE or an approved service provider.</p>
+                            </div>
+                        </details>
+                    </div>
                 </div>
-            </div>
 
-            <div class="milestone" data-aos="zoom-out-down" >
-                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
-                <div class="content">
-                    <h3>04 | 2025</h3>
-                    <h4>Incorporation</h4>
-                    <p>Incorporation of the EASE - Ergonomische Assistenzsysteme GmbH.</p>
+                <div id="faq-support" class="faq-group">
+                    <div class="faq-group-heading">
+                        <span aria-hidden="true">04</span>
+                        <div>
+                            <p>5 questions</p>
+                            <h3>Service &amp; trials</h3>
+                        </div>
+                    </div>
+                    <div class="faq-list">
+                        <details>
+                            <summary>Which services do you provide?</summary>
+                            <div class="faq-answer">
+                                <p>We support you during rollout, correct adjustment and safe use of the system. Depending on the agreement, support may include:</p>
+                                <ul>
+                                    <li>onboarding and instruction</li>
+                                    <li>support with operational rollout</li>
+                                    <li>ramp-up support at typical workplaces</li>
+                                    <li>regular maintenance</li>
+                                    <li>technical function and safety inspections</li>
+                                    <li>required software and firmware updates</li>
+                                    <li>replacement of necessary wear parts</li>
+                                    <li>maintenance reports</li>
+                                    <li>replacement units during regular maintenance or an unplanned outage</li>
+                                </ul>
+                                <p>A dedicated contact is available for technical questions and faults.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>What does the User Experience Guarantee mean?</summary>
+                            <div class="faq-answer">
+                                <p>The User Experience Guarantee is a voluntary satisfaction guarantee covering the first three months after delivery. It applies if the system has been used seriously and integrated organisationally into operations, but a significant and sustained acceptance issue nevertheless remains among the intended employees.</p>
+                                <p>The issue must be reported early, and EASE must be given the opportunity to analyse the causes and make at least two optimisation attempts. These may include additional instruction, adjusted settings, training or technical optimisation. If the material acceptance issue remains, the affected systems may be returned under the contractually agreed conditions. This is a special contractual right of return, not a technical performance guarantee or a statutory right of withdrawal.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Does operation have to stop during maintenance?</summary>
+                            <div class="faq-answer">
+                                <p>For the duration of regular maintenance, a functionally equivalent replacement unit is provided under the relevant service agreement. It need not be brand new or identical to the original unit, but it provides the same contractually agreed functionality.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>What happens in the event of an unplanned outage?</summary>
+                            <div class="faq-answer">
+                                <p>An outage should be reported without delay through the agreed service channel. The report should include the serial number, a description of the fault, any available photos, videos or error messages, and the delivery address.</p>
+                                <p>Once a complete fault report has been received, a functionally equivalent replacement unit is provided under the service agreement. Provision is planned within five working days for delivery addresses in Germany and within seven working days for addresses in other EU member states.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Are demonstrations available?</summary>
+                            <div class="faq-answer">
+                                <p>Yes. Demonstrations and practical product trials can be arranged. The system is presented in the intended work environment or using representative tasks, allowing its function, fit, comfort and assistance effect to be assessed under realistic conditions.</p>
+                                <p><a class="inline-link" href="#contact-section">Request a demo for your workplace</a></p>
+                            </div>
+                        </details>
+                    </div>
                 </div>
-            </div>
-
-            <div class="milestone" data-aos="zoom-out-down" >
-                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
-                <div class="content">
-                    <h3>05 | 2025</h3>
-                    <h4>Completed Field Tests</h4>
-                    <p>The EASE Exos were successfully deployed at relevant workplaces for several weeks. <br>The biggest highlight was this: <a href="#news">Click: News</a>! </p>
-                </div>
-            </div>
-
-            <div class="milestone" data-aos="zoom-out-down" >
-                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
-                <div class="content">
-                    <h3>09 | 2025</h3>
-                    <h4>Future of Logistics</h4>
-                    <p>Winner of the Digital Logistics Award 2025.</p>
-                </div>
-            </div>
-
-            <div class="milestone" data-aos="zoom-out-down" >
-                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
-                <div class="content">
-                    <h3>10 | 2025</h3>
-                    <h4>Revenue with Impact</h4>
-                    <p>First paid pilot project with our partner Langmatz GmbH.</p>
-                </div>
-            </div>
-
-            <div class="milestone" data-aos="zoom-out-down" >
-                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
-                <div class="content">
-                    <h3>03 | 2026</h3>
-                    <h4>Winner of the LCS Logistics ChangerS Award</h4>
-                </div>
-            </div>
-
-            <div class="milestone" data-aos="zoom-out-down" >
-                <img class="marker"  src="./img/scroll-indicator.svg" alt="a triangle marker">
-                <div class="content">
-                    <h3>Today</h3>
-                    <h4>Buy our exoskeletons!</h4>
-                    <p>LU 20 will be shipped in 2026. </br> Buy now and join our satisfied customers! </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <section id="news">
-        <h2>News</h2>
-        <div class="three-column-flex">
-            <div class="icon-div" data-aos="fade-up">
-                <img src="./img/Rohde_Schwarz_Logo.png" alt="Logo of company Rohde & Schwarz">
-                <h3>Field Test at Rohde & Schwarz – A milestone for EASE</h3>
-                <p>In May 2025, we successfully tested our exoskeleton for the first time in real conditions at the Teisnach plant, during ongoing operations and alongside production and logistics employees. The honest feedback we received and the visible relief in the workplace confirm our approach and provide valuable insights for further development. Our conclusion? The proof of concept is complete, and we are more motivated than ever!</p>
-                <p>Click <a href="files/Statement_RohdeSchwarz_en.pdf" target="_blank"><b>here</b></a> for the full artcile.</p>
-            </div>
-            <div class="left-align-column span-2" data-aos="fade-up">
-                <img src="./img/RohdeSchwarz_Exoskeleton_FieldTest.jpg" alt="Picture from field test at Rohde and Schwarz with EASE exoskeleton">
             </div>
         </div>
     </section>
@@ -241,10 +545,10 @@
 
         <div class="three-column-flex">
             <div>
-                <img class="portrait-img" src="./img/martin.webp" alt="a portrait of martin">
+                <img class="portrait-img" src="./img/martin.webp" loading="lazy" decoding="async" alt="Portrait of Martin Fleischer">
             </div>
-            <div class="left-align-column span-2" data-aos="fade-right">
-                <h6>The Coordinator</h6>
+            <div class="left-align-column span-2">
+                <p class="team-eyebrow">The Coordinator</p>
                 <h4>Martin Fleischer | CEO</h4>
                 <p>Chief Executive Officer</p>
                 <p>
@@ -255,15 +559,15 @@
         
         <div class="three-column-flex reverse-columns">
             <div>
-                <img class="portrait-img" src="./img/christina.webp" alt="a portrait of christina">
+                <img class="portrait-img" src="./img/christina.webp" loading="lazy" decoding="async" alt="Portrait of Christina Harbauer">
             </div>
-            <div class="right-align-column span-2" data-aos="fade-left">
-                <h6>The Enthusiast</h6>
+            <div class="right-align-column span-2">
+                <p class="team-eyebrow">The Enthusiast</p>
                 <h4>Christina Harbauer | CCO</h4>
                 <p>Chief Commercial Officer</p>
                 <p>
-                    Customer Relations and External Operations </br>
-                    Expert in production ergonomics & exoskeletons
+                    Customer Relations and External Operations <br>
+                    Expert in production ergonomics &amp; exoskeletons
                 </p>
             </div>
         </div>
@@ -271,14 +575,14 @@
        
         <div class="three-column-flex">
             <div>
-                <img class="portrait-img" src="./img/noah.webp" alt="a portrait of noah">
+                <img class="portrait-img" src="./img/noah.webp" loading="lazy" decoding="async" alt="Portrait of Noah Lars Gerullis">
             </div>
-            <div class="left-align-column span-2" data-aos="fade-right">
-                <h6>The Doer</h6>
+            <div class="left-align-column span-2">
+                <p class="team-eyebrow">The Doer</p>
                 <h4>Noah Lars Gerullis | CTO, COO</h4>
                 <p>Chief Technology Officer & Chief Operations Officer</p>
                 <p>
-                    Tech and Supply Chain Managment </br>                    
+                    Tech and Supply Chain Management <br>
                 </p>
             </div>
         </div>
@@ -287,10 +591,10 @@
 
         <div class="three-column-flex reverse-columns">
             <div>
-                <img class="portrait-img" src="./img/Johannes.webp" alt="a portrait of Johannes">
+                <img class="portrait-img" src="./img/Johannes.webp" loading="lazy" decoding="async" alt="Portrait of Johannes Blei">
             </div>
-            <div class="right-align-column span-2" data-aos="fade-left">
-                <h6>The Numbers Guy</h6>
+            <div class="right-align-column span-2">
+                <p class="team-eyebrow">The Funding Strategist</p>
                 <h4>Johannes Blei | CFO</h4>
                 <p>Chief Financial Officer</p>
                 <p>
@@ -298,17 +602,104 @@
                 </p>
             </div>
         </div>
+
+        <h3 class="team-section-heading">The Team</h3>
+
+        <div class="team-grid">
+            <div class="three-column-flex">
+                <div>
+                    <img class="portrait-img team-member-photo" src="./img/gitti-arnold.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Portrait of Gitti Arnold">
+                </div>
+                <div class="left-align-column span-2">
+                    <p class="team-eyebrow">Sales</p>
+                    <h4>Gitti Arnold | Sales</h4>
+                </div>
+            </div>
+
+            <div class="three-column-flex">
+                <div>
+                    <img class="portrait-img team-member-photo" src="./img/christian-albat.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Portrait of Christian Albat">
+                </div>
+                <div class="left-align-column span-2">
+                    <p class="team-eyebrow">Sales</p>
+                    <h4>Christian Albat | Sales</h4>
+                </div>
+            </div>
+
+            <div class="three-column-flex">
+                <div>
+                    <img class="portrait-img team-member-photo" src="./img/amir-moini.jpg" width="600" height="600" loading="lazy" decoding="async" alt="Portrait of Amir Moini">
+                </div>
+                <div class="left-align-column span-2">
+                    <p class="team-eyebrow">Engineering</p>
+                    <h4>Amir Moini | Embedded Engineer</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="student-team" aria-label="Working Students">
+            <div class="student-team-grid">
+                <article class="student-team-card">
+                    <span class="student-team-monogram student-team-monogram-wide" aria-hidden="true">JSA</span>
+                    <div>
+                        <h4>Juan Sebastian Alcaron</h4>
+                        <p>Engineering</p>
+                    </div>
+                </article>
+                <article class="student-team-card">
+                    <img class="student-team-photo" src="./img/isabella-flor.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Portrait of Isabella Flor">
+                    <div>
+                        <h4>Isabella Flor</h4>
+                        <p>Engineering</p>
+                    </div>
+                </article>
+                <article class="student-team-card">
+                    <img class="student-team-photo" src="./img/preethi-golla.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Portrait of Preethi Golla">
+                    <div>
+                        <h4>Preethi Golla</h4>
+                        <p>Founders Associate (CEO)</p>
+                    </div>
+                </article>
+                <article class="student-team-card">
+                    <img class="student-team-photo" src="./img/jungsik-kwon.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Portrait of Jungsik Kwon">
+                    <div>
+                        <h4>Jungsik Kwon</h4>
+                        <p>Design</p>
+                    </div>
+                </article>
+                <article class="student-team-card">
+                    <img class="student-team-photo" src="./img/julia-ott.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Portrait of Julia Ott">
+                    <div>
+                        <h4>Julia Ott</h4>
+                        <p>Sales and Marketing</p>
+                    </div>
+                </article>
+                <article class="student-team-card">
+                    <img class="student-team-photo" src="./img/sweekrati-sachan.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Portrait of Sweekrati Sachan">
+                    <div>
+                        <h4>Sweekrati Sachan</h4>
+                        <p>Founders Associate (CCO)</p>
+                    </div>
+                </article>
+                <article class="student-team-card">
+                    <span class="student-team-monogram" aria-hidden="true">DS</span>
+                    <div>
+                        <h4>Daniel Schaeffer</h4>
+                        <p>Engineering</p>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>    
     
     
-    <div id="horizontal-scroll-container">
-        <br><br><br>
-        <h3 style="margin-bottom: 5rem;">Our partners</h3>
-        <div class="horizontal-scrolling-div">
+    <div id="horizontal-scroll-container" aria-labelledby="partners-heading-en">
+        <h3 id="partners-heading-en" style="margin-bottom: 5rem;">Our partners</h3>
+        <div class="horizontal-scrolling-div" role="region" aria-label="Logos of our partners">
             <div class="horizontal-scrolling-items">
-                <img src="./img/exist_logo.svg" alt="exist logo">
-                <img src="./img/ptj-logo.svg" alt="ptj logo">
-                <img src="./img/bmwi_logo.svg" alt="bmwi logo">
+                <img src="./img/exist_logo.svg" alt="EXIST">
+                <img src="./img/ptj-logo.svg" alt="Projektträger Jülich">
+                <img src="./img/bmwi_logo.svg" alt="German Federal Ministry for Economic Affairs">
                 <img src="./img/BVL.png" alt="BVL">
                 <img src="./img/cna.png" alt="CNA">
                 <img src="./img/gfa.png" alt="GFA">
@@ -317,18 +708,18 @@
                 <img src="./img/DIN.png" alt="DIN">
                 <img src="./img/ISO.png" alt="ISO">
                 <img src="./img/ESA.png" alt="ESA">
-                <img src="./img/european_flag.svg" alt="european flag">
+                <img src="./img/european_flag.svg" alt="European Union">
                 <img src="./img/BayStartUP.svg" alt="BayStartUP">
-                <img src="./img/tum_logo.svg" alt="tum logo">
-                <img src="./img/unternehmertum_logo.svg" alt="unternehmertum logo">
-                <img src="./img/xplore_logo.svg" alt="xplore logo">
-                <img src="./img/images.png" alt="Logo">
+                <img src="./img/tum_logo.svg" alt="Technical University of Munich">
+                <img src="./img/unternehmertum_logo.svg" alt="UnternehmerTUM">
+                <img src="./img/xplore_logo.svg" alt="Xplore">
+                <img src="./img/images.png" alt="XPRENEURS Incubator">
                 <img src="./img/GT.svg" alt="GT">                    
             </div>
-            <div class="horizontal-scrolling-items">
-                               <img src="./img/exist_logo.svg" alt="exist logo">
-                <img src="./img/ptj-logo.svg" alt="ptj logo">
-                <img src="./img/bmwi_logo.svg" alt="bmwi logo">
+            <div class="horizontal-scrolling-items" aria-hidden="true">
+                <img src="./img/exist_logo.svg" alt="EXIST">
+                <img src="./img/ptj-logo.svg" alt="Projektträger Jülich">
+                <img src="./img/bmwi_logo.svg" alt="German Federal Ministry for Economic Affairs">
                 <img src="./img/BVL.png" alt="BVL">
                 <img src="./img/cna.png" alt="CNA">
                 <img src="./img/gfa.png" alt="GFA">
@@ -337,19 +728,19 @@
                 <img src="./img/DIN.png" alt="DIN">
                 <img src="./img/ISO.png" alt="ISO">
                 <img src="./img/ESA.png" alt="ESA">
-                <img src="./img/european_flag.svg" alt="european flag">
+                <img src="./img/european_flag.svg" alt="European Union">
                 <img src="./img/BayStartUP.svg" alt="BayStartUP">
-                <img src="./img/tum_logo.svg" alt="tum logo">
-                <img src="./img/unternehmertum_logo.svg" alt="unternehmertum logo">
-                <img src="./img/xplore_logo.svg" alt="xplore logo">
-                <img src="./img/images.png" alt="Logo">
+                <img src="./img/tum_logo.svg" alt="Technical University of Munich">
+                <img src="./img/unternehmertum_logo.svg" alt="UnternehmerTUM">
+                <img src="./img/xplore_logo.svg" alt="Xplore">
+                <img src="./img/images.png" alt="XPRENEURS Incubator">
                 <img src="./img/GT.svg" alt="GT">    
                 
             </div>
-            <div class="horizontal-scrolling-items">
-                                <img src="./img/exist_logo.svg" alt="exist logo">
-                <img src="./img/ptj-logo.svg" alt="ptj logo">
-                <img src="./img/bmwi_logo.svg" alt="bmwi logo">
+            <div class="horizontal-scrolling-items" aria-hidden="true">
+                <img src="./img/exist_logo.svg" alt="EXIST">
+                <img src="./img/ptj-logo.svg" alt="Projektträger Jülich">
+                <img src="./img/bmwi_logo.svg" alt="German Federal Ministry for Economic Affairs">
                 <img src="./img/BVL.png" alt="BVL">
                 <img src="./img/cna.png" alt="CNA">
                 <img src="./img/gfa.png" alt="GFA">
@@ -358,45 +749,35 @@
                 <img src="./img/DIN.png" alt="DIN">
                 <img src="./img/ISO.png" alt="ISO">
                 <img src="./img/ESA.png" alt="ESA">
-                <img src="./img/european_flag.svg" alt="european flag">
+                <img src="./img/european_flag.svg" alt="European Union">
                 <img src="./img/BayStartUP.svg" alt="BayStartUP">
-                <img src="./img/tum_logo.svg" alt="tum logo">
-                <img src="./img/unternehmertum_logo.svg" alt="unternehmertum logo">
-                <img src="./img/xplore_logo.svg" alt="xplore logo">
-                <img src="./img/images.png" alt="Logo">
+                <img src="./img/tum_logo.svg" alt="Technical University of Munich">
+                <img src="./img/unternehmertum_logo.svg" alt="UnternehmerTUM">
+                <img src="./img/xplore_logo.svg" alt="Xplore">
+                <img src="./img/images.png" alt="XPRENEURS Incubator">
                 <img src="./img/GT.svg" alt="GT">    
                 
             </div>
         </div>
     </div>
+    </main>
     
     
     
-    <section id="contact-section">
-        <div class="three-column-flex">
-            <div class="span-2">
-                <img src="./img/contact.webp" alt="" data-aos="zoom-in" >
-            </div>
-            <div class="left-align-column" data-aos="fade-up" >
-                <h2>Contact Us</h2>
-                <p>We focus on long-term partnerships with companies that value their employees and want to promote their health. Contact us to find out more about how EASE exoskeletons can make your workplace safer and more productive.</p>
-                <a href="mailto:info@ease-systems.de" class="button">Send Message</a>             
-            </div>
-        </div>
-    </section>
-
     <footer>
         <div>
-            <img id="footer-pattern" src="./img/pattern-green.svg" alt="a pattern of triangles">
+            <img id="footer-pattern" src="./img/pattern-green.svg" loading="lazy" decoding="async" alt="">
         </div>
         <div>
-            <a href="/"><img id="ease-icon" src="./img/favicon_big.svg" alt="ease logo"></a>
+            <a href="/" aria-label="EASE home"><img id="ease-icon" src="./img/favicon_big.svg" loading="lazy" decoding="async" alt="EASE"></a>
         </div>        
         <div>
             <div id="footer-links">
-                <a href="#exoskeletons-section">Exoskeletons</a>
-                <a href="#about-section">About Us</a>
+                <a href="#lu20-section">LU 20</a>
+                <a href="#field-test">Field Test</a>
                 <a href="#contact-section">Contact Us</a>
+                <a href="#faq-section">FAQ</a>
+                <a href="#about-section">Team</a>
             </div>
             <div id="copyright">
                 <span>&#169; 2026 EASE <br> <a href="imprint.html">Imprint</a> | <a href="privacy.html">Data Privacy</a></span>

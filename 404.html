@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
         <title>EASE Exoskelette | 404</title>
+        <meta name="robots" content="noindex,follow">
 
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
@@ -12,45 +13,63 @@
         <link rel="icon" href="./favicon.ico">
     </head>
 <body>
-    <nav id="navbar" class="">
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt</a>
+    <nav id="navbar" class="scrolled" aria-label="Hauptnavigation">
         <div id="first-nav-row">
-            <a href="https://ease-systems.de"><img id="ease-logo" src="./img/ease-logo-green.svg" alt="EASE logo"></a>
-            <button type="button" id="menu-toggle" class="icon" aria-label="Navigation umschalten" aria-controls="nav-elements" aria-expanded="false" onclick="menuToggle()"></button>
+            <a href="/" aria-label="EASE Startseite"><img id="ease-logo" src="./img/ease-logo-white.svg" alt="EASE"></a>
+            <div id="mobile-buttons">
+                <div class="language-toggle">
+                    <span class="active-language" aria-current="page">DE</span><span aria-hidden="true">|</span><a href="/english.html" lang="en" hreflang="en" aria-label="English homepage">EN</a>
+                </div>
+                <button type="button" id="menu-toggle" class="icon" aria-label="Navigation umschalten" aria-controls="nav-elements" aria-expanded="false" onclick="menuToggle()"></button>
+            </div>
         </div>
         <div id="nav-elements">
-            <a class="nav-link" onclick="menuToggle()" href="https://ease-systems.de#exoskeletons-section">Exoskelette</a>
-            <a class="nav-link" onclick="menuToggle()" href="https://ease-systems.de#about-section">Über uns</a>
-            <a class="nav-link" onclick="menuToggle()" href="https://ease-systems.de#contact-section">Kontakt</a>
+            <a class="nav-link" onclick="menuToggle()" href="/#proof-section">Nachweise</a>
+            <a class="nav-link" onclick="menuToggle()" href="/#lu20-section">LU 20</a>
+            <a class="nav-link" onclick="menuToggle()" href="/#field-test">Praxistest</a>
+            <a class="nav-link" onclick="menuToggle()" href="/#contact-section">Kontakt</a>
+            <a class="nav-link" onclick="menuToggle()" href="/#faq-section">FAQ</a>
+            <a class="nav-link" onclick="menuToggle()" href="/#about-section">Team</a>
         </div>
-        <div class="language-toggle">
-            <a href="https://ease-systems.de/" class="active-language">de </a><span>|</span><a href="https://ease-systems.de/english.html">en</a>
+        <div id="desktop-buttons">
+            <div class="language-toggle">
+                <span class="active-language" aria-current="page">DE</span><span aria-hidden="true">|</span><a href="/english.html" lang="en" hreflang="en" aria-label="English homepage">EN</a>
+            </div>
         </div>
     </nav>
     
-    <section>
-
-        <h1>Huups</h1>
-
-        <h4>diese Seite existiert leider nicht</h4>
-
-        <a class="big-central-btn" href="https://ease-systems.de">Bring mich in Sicherheit</a>
+    <main id="main-content">
+    <section class="only-section not-found-section" aria-labelledby="not-found-heading">
+        <p class="section-kicker">404 · Seite nicht gefunden</p>
+        <h1 id="not-found-heading">Huch!</h1>
+        <p class="not-found-copy">Diese Seite existiert leider nicht. Hier finden Sie direkt zu den wichtigsten Bereichen zurück.</p>
+        <div class="not-found-actions">
+            <a class="big-central-btn" href="/">Zur Startseite</a>
+            <a class="text-link" href="/#lu20-section">LU 20 ansehen</a>
+            <a class="text-link" href="/selbsttest.html">Arbeitsplatz prüfen</a>
+            <a class="text-link" href="/#contact-section">Demo anfragen</a>
+        </div>
     </section>
+    </main>
     
     <footer>
         <div>
-            <img id="footer-pattern" src="./img/pattern-green.svg" alt="a pattern of triangles">
+            <img id="footer-pattern" src="./img/pattern-green.svg" loading="lazy" decoding="async" alt="">
         </div>
         <div>
-            <a href="https://ease-systems.de/"><img id="ease-icon" src="./img/favicon_big.svg" alt="ease logo"></a>
+            <a href="/" aria-label="EASE Startseite"><img id="ease-icon" src="./img/favicon_big.svg" loading="lazy" decoding="async" alt="EASE"></a>
         </div>        
         <div>
             <div id="footer-links">
-                <a href="https://ease-systems.de#exoskeletons-section">Exoskelette</a>
-                <a href="https://ease-systems.de#about-section">Über uns</a>
-                <a href="https://ease-systems.de#contact-section">Kontakt</a>
+                <a href="/#lu20-section">LU 20</a>
+                <a href="/#field-test">Praxistest</a>
+                <a href="/#contact-section">Kontakt</a>
+                <a href="/#faq-section">FAQ</a>
+                <a href="/#about-section">Team</a>
             </div>
             <div id="copyright">
-                <span>© 2025 EASE by the HF.Exo project <br> <a href="https://ease-systems.de/imprint.html">Impressum</a> | <a href="https://ease-systems.de/privacy.html">Datenschutz</a></span>
+                <span>© 2026 EASE <br> <a href="/imprint.html">Impressum</a> | <a href="/privacy.html">Datenschutz</a></span>
             </div>
         </div>
     </footer>
