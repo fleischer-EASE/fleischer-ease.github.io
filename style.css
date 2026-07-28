@@ -680,37 +680,100 @@ nav {
     background-color: #fff06b;
 }
 
-.proof-teaser {
-    display: grid;
-    grid-template-columns: 10rem minmax(0, 1fr) auto;
-    align-items: center;
-    gap: 2.5rem;
+.proof-study-intro {
+    width: min(100%, 46rem);
     margin-top: 3.5rem;
-    padding: 2rem 2.5rem;
+}
+
+.proof-study-intro h2 {
+    font-size: clamp(2.25rem, 4vw, 3.4rem);
+    line-height: 1.05;
+    text-align: left;
+    text-wrap: balance;
+}
+
+.proof-study-intro > p:not(.section-kicker) {
+    margin: 1rem 0 0;
+    color: #17392a;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.proof-study-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.proof-study-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 2rem;
     border: 1px solid rgba(0, 66, 37, .16);
     border-radius: 2rem;
     background: rgba(255, 255, 255, .3);
 }
 
-.proof-teaser > img {
-    width: 100%;
-    max-height: 3.5rem;
+.proof-study-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .65rem;
+    min-height: 5.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--main);
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.proof-study-brand img {
+    width: 7.5rem;
+    height: 2.75rem;
     object-fit: contain;
+    object-position: left center;
 }
 
-.proof-teaser h2 {
-    font-size: 1.6rem;
+.company-logo--mark {
+    width: 2.75rem !important;
+}
+
+.company-logo--stacked {
+    width: 3.5rem !important;
+}
+
+.company-logo--wordmark {
+    width: 7.5rem !important;
+}
+
+.proof-study-brand strong {
+    max-width: 15rem;
+}
+
+.proof-study-card h3 {
+    margin-top: .75rem;
+    color: var(--main);
+    font-size: 1.45rem;
+    line-height: 1.15;
     text-align: left;
+    text-wrap: balance;
 }
 
-.proof-teaser p {
-    margin: .6rem 0 0;
-    line-height: 1.45;
+.proof-study-card > p:not(.section-kicker) {
+    margin: 1rem 0 1.5rem;
+    color: #17392a;
+    line-height: 1.5;
 }
 
-.proof-teaser .section-kicker {
+.proof-study-card .section-kicker {
     margin: 0;
     font-size: .75rem;
+}
+
+.proof-study-card .text-link {
+    align-self: flex-start;
+    margin-top: auto;
 }
 
 /* buying journey */
@@ -932,6 +995,15 @@ nav {
 
 .wide-section {
     padding-top: 3rem;
+}
+
+.case-studies-intro {
+    margin-bottom: 3rem;
+}
+
+.case-studies-list {
+    display: grid;
+    gap: 2.5rem;
 }
 
 .wide-section .case-study {
@@ -1388,6 +1460,7 @@ nav {
     grid-template-columns: minmax(0, .95fr) minmax(0, 1.15fr);
     overflow: hidden;
     margin-top: 4rem;
+    scroll-margin-top: 7rem;
     border-radius: 3rem;
     background: rgba(255, 255, 255, .34);
     box-shadow: inset 0 0 0 1px rgba(0, 66, 37, .1);
@@ -1399,19 +1472,38 @@ nav {
 
 .customer-lockup {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1.25rem;
     margin-bottom: 3rem;
 }
 
+.customer-brand {
+    display: flex;
+    flex: 1 1 15rem;
+    align-items: center;
+    gap: 1rem;
+    min-width: 0;
+}
+
 .customer-lockup img {
-    width: 9rem;
+    flex: 0 0 auto;
+    width: 7.5rem;
+    height: 3rem;
     max-height: 3rem;
     object-fit: contain;
     object-position: left center;
 }
 
+.customer-name {
+    max-width: 13rem;
+    color: var(--main);
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
 .customer-lockup span {
+    flex: 0 0 auto;
     padding-left: 1.25rem;
     border-left: 1px solid rgba(0, 66, 37, .3);
     color: var(--main);
@@ -1430,7 +1522,8 @@ nav {
     text-transform: uppercase;
 }
 
-.case-study h2 {
+.case-study h2,
+.case-study h3 {
     max-width: 30rem;
     font-size: clamp(2.25rem, 4vw, 3.5rem);
     line-height: 1.05;
@@ -1506,6 +1599,14 @@ nav {
     min-height: 38rem;
     object-fit: cover;
     object-position: right center;
+}
+
+.case-study--reverse .case-study-image {
+    order: -1;
+}
+
+.case-study-image--center {
+    object-position: center;
 }
 
 /* column layout */
@@ -2009,26 +2110,29 @@ footer > div:last-child {
         font-size: .8rem;
     }
 
-    .proof-teaser {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    .proof-study-intro {
         margin-top: 2rem;
-        padding: 2rem;
         text-align: center;
     }
 
-    .proof-teaser > img {
-        width: 9rem;
-        margin: 0 auto;
-    }
-
-    .proof-teaser h2 {
-        font-size: 1.5rem;
+    .proof-study-intro h2 {
+        font-size: 2.2rem;
         text-align: center;
     }
 
-    .proof-teaser .text-link {
-        justify-self: center;
+    .proof-study-intro > p:not(.section-kicker) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .proof-study-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .proof-study-card {
+        padding: 1.75rem;
     }
 
     .content-section,
@@ -2205,7 +2309,8 @@ footer > div:last-child {
         border-left: 0;
     }
 
-    .case-study h2 {
+    .case-study h2,
+    .case-study h3 {
         font-size: 2.35rem;
     }
 
