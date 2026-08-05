@@ -51,7 +51,11 @@ function menuToggle() {
   navElements.classList.toggle("toggled", isOpen);
   menuToggleIcon.setAttribute("aria-expanded", String(isOpen));
 
-  if (navbar) navbar.style.top = "1rem";
+  if (navbar) {
+    navbar.style.top = isOpen ? "0" : "1rem";
+    navbar.classList.toggle("menu-open", isOpen);
+  }
+  document.body.classList.toggle("menu-is-open", isOpen);
   setMenuIcon();
 }
 
@@ -76,6 +80,8 @@ function handleResize() {
     menuToggleIcon.classList.remove("open");
     navElements.classList.remove("toggled");
     menuToggleIcon.setAttribute("aria-expanded", "false");
+    navbar?.classList.remove("menu-open");
+    document.body.classList.remove("menu-is-open");
   }
 
   updateNavbarAppearance();

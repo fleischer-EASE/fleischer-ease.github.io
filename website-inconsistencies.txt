@@ -1,0 +1,104 @@
+WEBSITE CONSISTENCY AUDIT
+Date: 5 August 2026
+
+No website files were changed during this audit.
+
+HIGH PRIORITY
+
+1. Conflicting phone numbers
+
+   Imprint (imprint.html, line 57):
+   +49 151 29450554
+
+   Privacy policy (privacy.html, line 56):
+   +49 (0) 151 176 817 84
+
+   Resolve: All number are +49 151 29450554
+
+2. "Norddeutschland" remains in the Sales PDF
+
+   The website card now says only "NRW bevorzugt", but the linked Sales PDF
+   still states "NRW / Norddeutschland bevorzugt".
+
+   Website: index.html, line 818
+   PDF: files/20260714_EASE_Sales_GTM_Stellenbeschreibung_DE.pdf
+
+   Resolve: Do not change anything.
+
+3. Incorrect student-job PDF metadata
+
+   Both student-job PDFs still use the Sales/GTM position as their PDF title
+   and contain Sales/GTM keywords in their document metadata.
+
+   PDFs:
+   - files/20260805_EASE_Werkstudent_Elektrotechnik.pdf
+   - files/20260805_EASE_Werkstudent_Embedded_Software.pdf
+
+   Resolve: Remove both student jobs
+
+MEDIUM AND MINOR
+
+4. Mixed-language English job cards
+
+   The English job cards use English position details but retain German job
+   titles and German gender notation. The titles should either be translated
+   or marked with lang="de".
+
+   Website: english.html, starting at line 816
+
+   Resolve: Do not change anything
+
+5. Inconsistent gender notation
+
+   "Werkstudent*in Embedded Software" lacks "(m/w/d)" on both the website and
+   in the PDF, while the other positions include it.
+
+   Resolve: The posting is removed anyways (in Step 3)
+
+6. English footer logo destination
+
+   The English header logo links to the English homepage, but the English
+   footer logo links to the German homepage.
+
+   Website: english.html, line 931
+
+   Resolve: Fix that
+
+7. Language of legal pages
+
+   The English footer labels the links "Imprint" and "Data Privacy", but both
+   links open German-only legal pages without indicating their language.
+
+   Resolve: Do not change anything
+
+8. Minor wording and typography differences
+
+   - German: "Chief Technology Officer and Chief Operations Officer"
+   - English: "Chief Technology Officer & Chief Operations Officer"
+   - "Founders Associate" should likely be "Founder's Associate" or
+     "Founders' Associate".
+   - The imprint alternates between a hyphen and an en dash in the company
+     name (imprint.html, line 50).
+
+        Resolve: Fix that
+
+9. Missing intrinsic image dimensions
+
+   Many images lack width and height attributes: 65 occurrences on each main
+   homepage. Chrome did not show visible layout instability locally, but adding
+   dimensions would improve layout stability and consistency.
+
+    Resolve: Fix that, if possible
+
+CHECKS THAT PASSED
+
+- Page sections and navigation use the same order.
+- German and English FAQ structures are aligned.
+- Both FAQs state that the exoskeleton weighs approximately 5 kg.
+- No remaining 6 kg references were found.
+- All local links, fragments, assets and IDs are valid.
+- No case-sensitive local path mismatches were found.
+- No broken images were found in Chrome.
+- No horizontal overflow was found at desktop or mobile widths.
+- Chrome reported no console errors.
+- External GitHub, HubSpot and Bavarian data-protection links currently resolve.

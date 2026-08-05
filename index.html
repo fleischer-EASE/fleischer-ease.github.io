@@ -57,7 +57,7 @@
     <a class="skip-link" href="#main-content">Zum Hauptinhalt</a>
     <nav id="navbar" class="scrolled" aria-label="Hauptnavigation">
         <div id="first-nav-row">
-            <a href="index.html" aria-label="EASE Startseite"><img id="ease-logo" src="./img/ease-logo-green.svg" alt="EASE"></a>
+            <a href="index.html" aria-label="EASE Startseite"><img id="ease-logo" src="./img/ease-logo-green.svg" alt="EASE" width="171" height="36"></a>
             <div id="mobile-buttons">
                 <div class="language-toggle">
                     <span class="active-language" aria-current="page">DE</span><span aria-hidden="true">|</span><a href="english.html" lang="en" hreflang="en">EN</a>
@@ -66,12 +66,13 @@
             </div>
         </div>
         <div id="nav-elements">
-            <a class="nav-link" onclick="menuToggle()" href="index.html#proof-section">Nachweise</a>
             <a class="nav-link" onclick="menuToggle()" href="index.html#lu20-section">LU 20</a>
             <a class="nav-link" onclick="menuToggle()" href="index.html#field-test">Praxistests</a>
-            <a class="nav-link" onclick="menuToggle()" href="index.html#contact-section">Kontakt</a>
             <a class="nav-link" onclick="menuToggle()" href="index.html#faq-section">FAQ</a>
+            <a class="nav-link" onclick="menuToggle()" href="index.html#contact-section">Kontakt</a>
+            <a class="nav-link" onclick="menuToggle()" href="index.html#resellers-section">Händler</a>
             <a class="nav-link" onclick="menuToggle()" href="index.html#about-section">Team</a>
+            <a class="nav-link" onclick="menuToggle()" href="index.html#careers-section">Jobs</a>
         </div>
         <div id="desktop-buttons">
             <div class="language-toggle">
@@ -92,7 +93,7 @@
                 <a class="hero-secondary-btn" href="selbsttest.html">Arbeitsplatz prüfen</a>
             </div>
         </div>
-        <img id="scroll-indicator" src="./img/scroll-indicator.svg" alt="">
+        <img id="scroll-indicator" src="./img/scroll-indicator.svg" alt="" width="175" height="136">
     </div>
 
     <section id="proof-section" aria-labelledby="proof-heading">
@@ -113,7 +114,6 @@
             </div>
 
             <div class="proof-study-intro">
-                <p class="section-kicker">Praxistests</p>
                 <h2 id="proof-heading">Erprobt im realen Arbeitsalltag.</h2>
                 <p>Direktes Feedback aus Produktion und Logistik zeigt, wie sich das LU 20 in unterschiedlichen Einsatzumgebungen bewährt.</p>
             </div>
@@ -163,17 +163,17 @@
         </div>
         <div class="benefit-grid">
             <article class="benefit-card">
-                <img src="./img/ease-icon.svg" alt="">
+                <img src="./img/ease-icon.svg" alt="" width="142" height="140">
                 <h3>Rücken &amp; Arme</h3>
                 <p>Aktive Unterstützung für zwei besonders beanspruchte Körperbereiche in einem System.</p>
             </article>
             <article class="benefit-card">
-                <img src="./img/feather-solid.svg" alt="">
+                <img src="./img/feather-solid.svg" alt="" width="512" height="512">
                 <h3>Bewegungsfreiheit</h3>
                 <p>Für dynamische Logistikabläufe entwickelt, bei denen Menschen beweglich bleiben müssen.</p>
             </article>
             <article class="benefit-card">
-                <img src="./img/user-solid.svg" alt="">
+                <img src="./img/user-solid.svg" alt="" width="448" height="512">
                 <h3>Praxisnah</h3>
                 <p>Gemeinsam mit Anwenderinnen und Anwendern an realen Logistik- und Industriearbeitsplätzen erprobt.</p>
             </article>
@@ -222,7 +222,7 @@
 
     <section id="field-test" class="wide-section" aria-labelledby="field-test-heading">
         <div class="section-intro case-studies-intro">
-            <p class="section-kicker">Praxiserprobung</p>
+            <p class="section-kicker">Praxistests</p>
             <h2 id="field-test-heading">Erprobt, wo Entlastung zählt.</h2>
             <p>Drei Partner, drei reale Arbeitsumgebungen: Das LU 20 wird gemeinsam mit den Menschen weiterentwickelt, die täglich heben, tragen und bewegen.</p>
         </div>
@@ -310,102 +310,6 @@
         </div>
     </section>
 
-    <section id="contact-section" class="conversion-section">
-        <div class="conversion-layout demo-funnel">
-            <div class="demo-funnel-aside">
-                <p class="section-kicker">Demo anfragen</p>
-                <h2>LU 20 für Ihre Logistik testen.</h2>
-                <p>Ein paar Angaben helfen uns, die Demo auf Ihren Arbeitsplatz und Ihr Team vorzubereiten.</p>
-                <ol class="demo-steps">
-                    <li>
-                        <span>1</span>
-                        <div><strong>Assessment</strong><p>Wir prüfen Aufgabe, Bewegungsablauf und Rahmenbedingungen.</p></div>
-                    </li>
-                    <li>
-                        <span>2</span>
-                        <div><strong>Arbeitsplatztest</strong><p>Ihr Team erlebt LU 20 im relevanten Logistikprozess.</p></div>
-                    </li>
-                    <li>
-                        <span>3</span>
-                        <div><strong>Passendes Angebot</strong><p>Sie erhalten eine Empfehlung für Pilotierung und nächsten Schritt.</p></div>
-                    </li>
-                </ol>
-                <a class="inline-link demo-selftest-link" href="selbsttest.html">Noch unsicher? Zum 3-Minuten-Selbsttest</a>
-            </div>
-            <div class="demo-form-panel">
-                <form id="demo-form-de" class="demo-form" action="mailto:info@ease-systems.de" method="post" enctype="text/plain" novalidate
-                    data-locale="de"
-                    data-endpoint=""
-                    data-message-submitting="Anfrage wird gesendet …"
-                    data-message-success="Vielen Dank. Ihre Demo-Anfrage ist bei uns eingegangen."
-                    data-message-error="Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie an info@ease-systems.de."
-                    data-message-email="Ihr E-Mail-Programm wurde geöffnet. Bitte senden Sie die vorbereitete Nachricht, um die Anfrage abzuschließen.">
-                    <div class="demo-form-grid">
-                        <div class="form-field">
-                            <label for="demo-company-de">Unternehmen *</label>
-                            <input id="demo-company-de" name="company" type="text" autocomplete="organization" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="demo-employees-de">Mitarbeitende am Standort *</label>
-                            <select id="demo-employees-de" name="employee_count" required>
-                                <option value="">Bitte auswählen</option>
-                                <option value="1-25">1–25</option>
-                                <option value="26-100">26–100</option>
-                                <option value="101-500">101–500</option>
-                                <option value="501+">Mehr als 500</option>
-                            </select>
-                        </div>
-                        <div class="form-field form-field-wide">
-                            <label for="demo-workplace-de">Logistikarbeitsplatz oder Aufgabe *</label>
-                            <textarea id="demo-workplace-de" name="workplace_task" rows="4" placeholder="Zum Beispiel Kommissionierung, Heben und Tragen oder Materialbereitstellung" required></textarea>
-                        </div>
-                        <div class="form-field">
-                            <label for="demo-firstname-de">Vorname *</label>
-                            <input id="demo-firstname-de" name="first_name" type="text" autocomplete="given-name" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="demo-lastname-de">Nachname *</label>
-                            <input id="demo-lastname-de" name="last_name" type="text" autocomplete="family-name" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="demo-email-de">Geschäftliche E-Mail *</label>
-                            <input id="demo-email-de" name="email" type="email" autocomplete="email" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="demo-phone-de">Telefonnummer</label>
-                            <input id="demo-phone-de" name="phone" type="tel" autocomplete="tel">
-                        </div>
-                        <div class="form-field form-field-wide">
-                            <label for="demo-timing-de">Bevorzugter Zeitraum *</label>
-                            <select id="demo-timing-de" name="preferred_timing" required>
-                                <option value="">Bitte auswählen</option>
-                                <option value="asap">So bald wie möglich</option>
-                                <option value="4-weeks">Innerhalb der nächsten 4 Wochen</option>
-                                <option value="3-months">Innerhalb der nächsten 3 Monate</option>
-                                <option value="later">Später im Jahr</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-honeypot" aria-hidden="true">
-                        <label for="demo-website-de">Website</label>
-                        <input id="demo-website-de" name="website" type="text" tabindex="-1" autocomplete="off">
-                    </div>
-                    <label class="form-consent" for="demo-privacy-de">
-                        <input id="demo-privacy-de" name="privacy_notice" type="checkbox" required>
-                        <span>Ich habe die Hinweise zur Verarbeitung meiner Demo-Anfrage in der <a href="privacy.html#demo-anfragen">Datenschutzerklärung</a> gelesen. *</span>
-                    </label>
-                    <button class="demo-submit big-central-btn" type="submit">Demo anfragen</button>
-                    <p class="demo-form-status" role="status" aria-live="polite"></p>
-                </form>
-                <div class="demo-success" hidden>
-                    <p class="section-kicker">Anfrage gesendet</p>
-                    <h3>Vielen Dank für Ihr Interesse an LU 20.</h3>
-                    <p>Wir melden uns, um Aufgabe, Arbeitsplatztest und den passenden nächsten Schritt abzustimmen.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="faq-section" class="content-section faq-section" aria-labelledby="faq-heading">
         <div class="faq-layout">
             <div class="faq-overview">
@@ -459,7 +363,7 @@
                         <details>
                             <summary>Wie viel wiegt das System?</summary>
                             <div class="faq-answer">
-                                <p>Das LU 20 wiegt ca. sechs Kilogramm. Die Last wird über die körpernahen Strukturen auf Unterarme, Schultern, Rücken und Hüfte verteilt. Durch das Rucksacksystem, das gemeinsam mit Deuter entwickelt wurde, spürt man das Gewicht nahezu nicht.</p>
+                                <p>Das LU 20 wiegt ca. fünf Kilogramm. Die Last wird über die körpernahen Strukturen auf Unterarme, Schultern, Rücken und Hüfte verteilt. Durch das Rucksacksystem, das gemeinsam mit Deuter entwickelt wurde, spürt man das Gewicht nahezu nicht.</p>
                             </div>
                         </details>
                     </div>
@@ -623,13 +527,136 @@
         </div>
     </section>
     
+    <section id="contact-section" class="conversion-section">
+        <div class="conversion-layout demo-funnel">
+            <div class="demo-funnel-aside">
+                <p class="section-kicker">Demo anfragen</p>
+                <h2>LU 20 für Ihre Logistik testen.</h2>
+                <p>Ein paar Angaben helfen uns, die Demo auf Ihren Arbeitsplatz und Ihr Team vorzubereiten.</p>
+                <ol class="demo-steps">
+                    <li>
+                        <span>1</span>
+                        <div><strong>Assessment</strong><p>Wir prüfen Aufgabe, Bewegungsablauf und Rahmenbedingungen.</p></div>
+                    </li>
+                    <li>
+                        <span>2</span>
+                        <div><strong>Arbeitsplatztest</strong><p>Ihr Team erlebt LU 20 im relevanten Logistikprozess.</p></div>
+                    </li>
+                    <li>
+                        <span>3</span>
+                        <div><strong>Passendes Angebot</strong><p>Sie erhalten eine Empfehlung für Pilotierung und nächsten Schritt.</p></div>
+                    </li>
+                </ol>
+                <a class="inline-link demo-selftest-link" href="selbsttest.html">Noch unsicher? Zum 3-Minuten-Selbsttest</a>
+            </div>
+            <div class="demo-form-panel">
+                <form id="demo-form-de" class="demo-form" action="mailto:info@ease-systems.de" method="post" enctype="text/plain" novalidate
+                    data-locale="de"
+                    data-endpoint=""
+                    data-message-submitting="Anfrage wird gesendet …"
+                    data-message-success="Vielen Dank. Ihre Demo-Anfrage ist bei uns eingegangen."
+                    data-message-error="Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie an info@ease-systems.de."
+                    data-message-email="Ihr E-Mail-Programm wurde geöffnet. Bitte senden Sie die vorbereitete Nachricht, um die Anfrage abzuschließen.">
+                    <div class="demo-form-grid">
+                        <div class="form-field">
+                            <label for="demo-company-de">Unternehmen *</label>
+                            <input id="demo-company-de" name="company" type="text" autocomplete="organization" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="demo-employees-de">Mitarbeitende am Standort *</label>
+                            <select id="demo-employees-de" name="employee_count" required>
+                                <option value="">Bitte auswählen</option>
+                                <option value="1-25">1–25</option>
+                                <option value="26-100">26–100</option>
+                                <option value="101-500">101–500</option>
+                                <option value="501+">Mehr als 500</option>
+                            </select>
+                        </div>
+                        <div class="form-field form-field-wide">
+                            <label for="demo-workplace-de">Logistikarbeitsplatz oder Aufgabe *</label>
+                            <textarea id="demo-workplace-de" name="workplace_task" rows="4" placeholder="Zum Beispiel Kommissionierung, Heben und Tragen oder Materialbereitstellung" required></textarea>
+                        </div>
+                        <div class="form-field">
+                            <label for="demo-firstname-de">Vorname *</label>
+                            <input id="demo-firstname-de" name="first_name" type="text" autocomplete="given-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="demo-lastname-de">Nachname *</label>
+                            <input id="demo-lastname-de" name="last_name" type="text" autocomplete="family-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="demo-email-de">Geschäftliche E-Mail *</label>
+                            <input id="demo-email-de" name="email" type="email" autocomplete="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="demo-phone-de">Telefonnummer</label>
+                            <input id="demo-phone-de" name="phone" type="tel" autocomplete="tel">
+                        </div>
+                        <div class="form-field form-field-wide">
+                            <label for="demo-timing-de">Bevorzugter Zeitraum *</label>
+                            <select id="demo-timing-de" name="preferred_timing" required>
+                                <option value="">Bitte auswählen</option>
+                                <option value="asap">So bald wie möglich</option>
+                                <option value="4-weeks">Innerhalb der nächsten 4 Wochen</option>
+                                <option value="3-months">Innerhalb der nächsten 3 Monate</option>
+                                <option value="later">Später im Jahr</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-honeypot" aria-hidden="true">
+                        <label for="demo-website-de">Website</label>
+                        <input id="demo-website-de" name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+                    <label class="form-consent" for="demo-privacy-de">
+                        <input id="demo-privacy-de" name="privacy_notice" type="checkbox" required>
+                        <span>Ich habe die Hinweise zur Verarbeitung meiner Demo-Anfrage in der <a href="privacy.html#demo-anfragen">Datenschutzerklärung</a> gelesen. *</span>
+                    </label>
+                    <button class="demo-submit big-central-btn" type="submit">Demo anfragen</button>
+                    <p class="demo-form-status" role="status" aria-live="polite"></p>
+                </form>
+                <div class="demo-success" hidden>
+                    <p class="section-kicker">Anfrage gesendet</p>
+                    <h3>Vielen Dank für Ihr Interesse an LU 20.</h3>
+                    <p>Wir melden uns, um Aufgabe, Arbeitsplatztest und den passenden nächsten Schritt abzustimmen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resellers-section" class="resellers-section" aria-labelledby="resellers-heading">
+        <div class="resellers-intro">
+            <p class="section-kicker">EASE Fachhandel</p>
+            <h2 id="resellers-heading">Zertifizierte Vertriebspartner</h2>
+            <p>Unsere zertifizierten Vertriebspartner beraten zum passenden Einsatz, ermöglichen Produkttests und begleiten den Kauf.</p>
+        </div>
+
+        <div class="reseller-list" aria-label="Zertifizierte Vertriebspartner">
+            <article class="reseller-card">
+                <div class="reseller-brand">
+                    <img src="./img/exoskelette-gmbh-logo.png" width="1056" height="604" loading="lazy" decoding="async" alt="exoskelette.gmbh – eine Marke der N-IPPIN GmbH">
+                </div>
+                <div class="reseller-copy">
+                    <p class="reseller-badge">Zertifizierter Vertriebspartner</p>
+                    <h3>exoskelette.gmbh</h3>
+                    <p>N-IPPIN GmbH bietet Beratung, Produkttests und Vertrieb für Exoskelette in Deutschland.</p>
+                    <ul class="reseller-meta" aria-label="Leistungen und Region">
+                        <li>Deutschland</li>
+                        <li>Beratung</li>
+                        <li>Test &amp; Vertrieb</li>
+                    </ul>
+                    <a class="reseller-link" href="https://exoskelette.gmbh/project/neu/" target="_blank" rel="noopener" aria-label="Partnerseite von exoskelette.gmbh in einem neuen Tab öffnen">Partnerseite besuchen <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
     <section id="about-section">
         <h2>Über uns</h2>
         <h3>Die Führungsebene</h3>
 
         <div class="three-column-flex">
             <div>
-                <img class="portrait-img" src="./img/martin.webp" loading="lazy" decoding="async" alt="Porträt von Martin Fleischer">
+                        <img class="portrait-img" src="./img/martin.webp" loading="lazy" decoding="async" alt="Porträt von Martin Fleischer">
             </div>
             <div class="left-align-column span-2">
                 <p class="team-eyebrow">Der Koordinator</p>
@@ -643,7 +670,7 @@
         
         <div class="three-column-flex reverse-columns">
             <div>
-                <img class="portrait-img" src="./img/christina.webp" loading="lazy" decoding="async" alt="Porträt von Christina Harbauer">
+                        <img class="portrait-img" src="./img/christina.webp" loading="lazy" decoding="async" alt="Porträt von Christina Harbauer">
             </div>
             <div class="right-align-column span-2">
                 <p class="team-eyebrow">Die Enthusiastin</p>
@@ -660,12 +687,12 @@
                 
         <div class="three-column-flex">
             <div>
-                <img class="portrait-img" src="./img/noah.webp" loading="lazy" decoding="async" alt="Porträt von Noah Lars Gerullis">
+                        <img class="portrait-img" src="./img/noah.webp" loading="lazy" decoding="async" alt="Porträt von Noah Lars Gerullis">
             </div>
             <div class="left-align-column span-2">
                 <p class="team-eyebrow">Der Macher</p>
                 <h4>Noah Lars Gerullis | CTO, COO</h4>
-                <p>Chief Technology Officer and Chief Operations Officer</p>
+                <p>Chief Technology Officer &amp; Chief Operations Officer</p>
                 <p>
                     Tech und Supply Chain Management <br>
                 </p>
@@ -675,7 +702,7 @@
 
         <div class="three-column-flex reverse-columns">
             <div>
-                <img class="portrait-img" src="./img/Johannes.webp" loading="lazy" decoding="async" alt="Porträt von Johannes Blei">
+                        <img class="portrait-img" src="./img/Johannes.webp" loading="lazy" decoding="async" alt="Porträt von Johannes Blei">
             </div>
             <div class="right-align-column span-2">
                 <p class="team-eyebrow">Der Zahlenflüsterer</p>
@@ -741,7 +768,7 @@
                     <img class="student-team-photo" src="./img/preethi-golla.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Porträt von Preethi Golla">
                     <div>
                         <h4>Preethi Golla</h4>
-                        <p>Founders Associate (CEO)</p>
+                        <p>Founder's Associate (CEO)</p>
                     </div>
                 </article>
                 <article class="student-team-card">
@@ -762,7 +789,7 @@
                     <img class="student-team-photo" src="./img/sweekrati-sachan.jpg" width="400" height="400" loading="lazy" decoding="async" alt="Porträt von Sweekrati Sachan">
                     <div>
                         <h4>Sweekrati Sachan</h4>
-                        <p>Founders Associate (CCO)</p>
+                        <p>Founder's Associate (CCO)</p>
                     </div>
                 </article>
                 <article class="student-team-card">
@@ -773,6 +800,68 @@
                     </div>
                 </article>
             </div>
+        </div>
+    </section>
+
+    <section id="careers-section" class="careers-section" aria-labelledby="careers-heading">
+        <div class="careers-intro">
+            <p class="section-kicker">Karriere bei EASE</p>
+            <h2 id="careers-heading">Beweg mit uns, was Menschen bewegt.</h2>
+        </div>
+
+        <div class="position-list" aria-label="Offene Stellen">
+            <article class="position-card">
+                <div class="position-card-copy">
+                    <h3>Sales Manager*in GTM (m/w/d)</h3>
+                    <ul class="position-meta" aria-label="Rahmenbedingungen">
+                        <li>Vollzeit · Unbefristet</li>
+                        <li>Deutschland · Remote</li>
+                        <li>NRW bevorzugt</li>
+                        <li>PDF · Deutsch</li>
+                    </ul>
+                </div>
+                <a class="position-link" href="files/20260714_EASE_Sales_GTM_Stellenbeschreibung_DE.pdf" target="_blank" rel="noopener" aria-label="Stellenbeschreibung für Sales Manager*in GTM (m/w/d) als PDF öffnen">Stelle ansehen <span aria-hidden="true">↗</span></a>
+            </article>
+
+            <article class="position-card">
+                <div class="position-card-copy">
+                    <h3>Junior Sales Manager*in (m/w/d)</h3>
+                    <ul class="position-meta" aria-label="Rahmenbedingungen">
+                        <li>Vollzeit · Unbefristet</li>
+                        <li>Deutschland · Remote</li>
+                        <li>NRW bevorzugt</li>
+                        <li>PDF · Deutsch</li>
+                    </ul>
+                </div>
+                <a class="position-link" href="files/20260805_EASE_Junior_Sales.pdf" target="_blank" rel="noopener" aria-label="Stellenbeschreibung für Junior Sales Manager*in (m/w/d) als PDF öffnen">Stelle ansehen <span aria-hidden="true">↗</span></a>
+            </article>
+
+            <article class="position-card">
+                <div class="position-card-copy">
+                    <h3>Werkstudent*in Elektrotechnik (m/w/d)</h3>
+                    <ul class="position-meta" aria-label="Rahmenbedingungen">
+                        <li>Werkstudierendentätigkeit</li>
+                        <li>München · Hybrid</li>
+                        <li>15–20 Std./Woche</li>
+                        <li>PDF · Deutsch</li>
+                    </ul>
+                </div>
+                <a class="position-link" href="files/20260805_EASE_Werkstudent_Elektrotechnik.pdf" target="_blank" rel="noopener" aria-label="Stellenbeschreibung für Werkstudent*in Elektrotechnik (m/w/d) als PDF öffnen">Stelle ansehen <span aria-hidden="true">↗</span></a>
+            </article>
+
+            <article class="position-card">
+                <div class="position-card-copy">
+                    <h3>Werkstudent*in Embedded Software (m/w/d)</h3>
+                    <ul class="position-meta" aria-label="Rahmenbedingungen">
+                        <li>Werkstudierendentätigkeit</li>
+                        <li>München · Hybrid</li>
+                        <li>15–20 Std./Woche</li>
+                        <li>PDF · Deutsch</li>
+                    </ul>
+                </div>
+                <a class="position-link" href="files/20260805_EASE_Werkstudent_Embedded_Software.pdf" target="_blank" rel="noopener" aria-label="Stellenbeschreibung für Werkstudent*in Embedded Software (m/w/d) als PDF öffnen">Stelle ansehen <span aria-hidden="true">↗</span></a>
+            </article>
+
         </div>
     </section>
 
@@ -797,7 +886,7 @@
                 <img src="./img/unternehmertum_logo.svg" alt="UnternehmerTUM">
                 <img src="./img/xplore_logo.svg" alt="Xplore">
                 <img src="./img/images.png" alt="XPRENEURS Incubator">
-                <img src="./img/GT.svg" alt="GT">    
+                <img src="./img/GT.svg" alt="GT">
             </div>
             <div class="horizontal-scrolling-items" aria-hidden="true">
                 <img src="./img/exist_logo.svg" alt="EXIST">
@@ -817,7 +906,7 @@
                 <img src="./img/unternehmertum_logo.svg" alt="UnternehmerTUM">
                 <img src="./img/xplore_logo.svg" alt="Xplore">
                 <img src="./img/images.png" alt="XPRENEURS Incubator">
-                <img src="./img/GT.svg" alt="GT">    
+                <img src="./img/GT.svg" alt="GT">
             </div>
                 <div class="horizontal-scrolling-items" aria-hidden="true">
                 <img src="./img/exist_logo.svg" alt="EXIST">
@@ -837,7 +926,7 @@
                 <img src="./img/unternehmertum_logo.svg" alt="UnternehmerTUM">
                 <img src="./img/xplore_logo.svg" alt="Xplore">
                 <img src="./img/images.png" alt="XPRENEURS Incubator">
-                <img src="./img/GT.svg" alt="GT">            
+                <img src="./img/GT.svg" alt="GT">
                 </div> 
         </div>
     </div>
@@ -846,18 +935,20 @@
 
     <footer>
         <div>
-            <img id="footer-pattern" src="./img/pattern-green.svg" loading="lazy" decoding="async" alt="">
+            <img id="footer-pattern" src="./img/pattern-green.svg" loading="lazy" decoding="async" alt="" width="469" height="484">
         </div>
         <div>
-            <a href="/" aria-label="EASE Startseite"><img id="ease-icon" src="./img/favicon_big.svg" loading="lazy" decoding="async" alt="EASE"></a>
+            <a href="/" aria-label="EASE Startseite"><img id="ease-icon" src="./img/favicon_big.svg" loading="lazy" decoding="async" alt="EASE" width="150" height="150"></a>
         </div>        
         <div>
             <div id="footer-links">
                 <a href="#lu20-section">LU 20</a>
                 <a href="#field-test">Praxistests</a>
-                <a href="#contact-section">Kontakt</a>
                 <a href="#faq-section">FAQ</a>
+                <a href="#contact-section">Kontakt</a>
+                <a href="#resellers-section">Händler</a>
                 <a href="#about-section">Team</a>
+                <a href="#careers-section">Jobs</a>
             </div>
             <div id="copyright">
                 <span>&#169; 2026 EASE <br> <a href="imprint.html">Impressum</a> | <a href="privacy.html">Datenschutz</a></span>
