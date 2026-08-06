@@ -172,11 +172,11 @@ function createDemoEmail(form, formData) {
   const timing =
     form.elements.preferred_timing.selectedOptions[0]?.textContent ?? "";
   const subject = isGerman
-    ? `LU 20 Demo-Anfrage – ${formData.get("company")}`
-    : `LU 20 demo request – ${formData.get("company")}`;
+    ? `LU\u00A020 Demo-Anfrage – ${formData.get("company")}`
+    : `LU\u00A020 demo request – ${formData.get("company")}`;
   const labels = isGerman
     ? {
-        intro: "Neue LU 20 Demo-Anfrage",
+        intro: "Neue LU\u00A020 Demo-Anfrage",
         company: "Unternehmen",
         employees: "Mitarbeitende am Standort",
         workplace: "Logistikarbeitsplatz / Aufgabe",
@@ -188,7 +188,7 @@ function createDemoEmail(form, formData) {
         accepted: "zur Kenntnis genommen",
       }
     : {
-        intro: "New LU 20 demo request",
+        intro: "New LU\u00A020 demo request",
         company: "Company",
         employees: "Employees at the site",
         workplace: "Logistics workplace / task",

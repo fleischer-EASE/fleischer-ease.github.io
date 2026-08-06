@@ -1966,6 +1966,10 @@ nav {
     background: var(--main);
 }
 
+.reseller-brand--light {
+    background: #fff;
+}
+
 .reseller-brand img {
     display: block;
     width: min(100%, 30rem);
